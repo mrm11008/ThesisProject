@@ -1636,7 +1636,12 @@ Prefab:
     - target: {fileID: 114655733489286928, guid: 883e4b1940851c14bb963b32806b2a75,
         type: 2}
       propertyPath: angryChar
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114655733489286928, guid: 883e4b1940851c14bb963b32806b2a75,
+        type: 2}
+      propertyPath: happyIntroUtterances.Array.data[0].priority
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 883e4b1940851c14bb963b32806b2a75, type: 2}

@@ -53,11 +53,11 @@ public class MovingPlatform : MonoBehaviour {
 		//	positiveMove = !positiveMove;
 		//	negativeMove = !negativeMove;
 		//	shift = true;
-				positiveMoveVector = positiveMoveVector;
-				negativeMoveVector = negativeMoveVector;
-				positiveMove = positiveMove;
-				negativeMove = negativeMove;
-				shift = true;
+				//positiveMoveVector = positiveMoveVector;
+				//negativeMoveVector = negativeMoveVector;
+				//positiveMove = positiveMove;
+				//negativeMove = negativeMove;
+				//shift = true;
 		}
 
 		if (fallUp == true) {

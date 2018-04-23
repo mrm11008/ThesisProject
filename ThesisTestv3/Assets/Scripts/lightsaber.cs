@@ -9,15 +9,15 @@ public class lightsaber : MonoBehaviour {
     public Transform endPos;
 
     private float textureOffset = 0;
-    private bool on = true;
-    private Vector3 endPosExtendedPos;
+    //private bool on = true;
+    //private Vector3 endPosExtendedPos;
 
 
 
 	// Use this for initialization
 	void Start () {
         lineRend = this.GetComponent<LineRenderer>();
-        endPosExtendedPos = endPos.localPosition;
+        //endPosExtendedPos = endPos.localPosition;
 
     }
 	

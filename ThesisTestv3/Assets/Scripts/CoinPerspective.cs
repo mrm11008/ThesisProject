@@ -5,7 +5,7 @@ using UnityEngine;
 public class CoinPerspective : MonoBehaviour {
 
     public Vector3 originalPosition;
-    private Vector3 cleanOriginalPosition;
+    //private Vector3 cleanOriginalPosition;
 
     private Vector3 cameraDirection;
     public Rotate camera;
@@ -14,7 +14,7 @@ public class CoinPerspective : MonoBehaviour {
         camera = FindObjectOfType<Rotate>();
 
         originalPosition = this.transform.position;
-        cleanOriginalPosition = this.transform.position;
+        //cleanOriginalPosition = this.transform.position;
     }
 	
 	// Update is called once per frame

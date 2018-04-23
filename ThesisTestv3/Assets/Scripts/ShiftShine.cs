@@ -22,7 +22,7 @@ public class ShiftShine : MonoBehaviour {
         }
         if (flash == true)
         {
-            float shine = Mathf.PingPong(Time.time, 5.0f);
+            //float shine = Mathf.PingPong(Time.time, 5.0f);
             float l = Mathf.Lerp(1f, 0.5f, 0.25f);
             rend.material.SetFloat("_Glow", l);
             shineTimer -= Time.deltaTime;

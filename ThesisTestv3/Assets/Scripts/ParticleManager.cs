@@ -9,7 +9,7 @@ public class ParticleManager : MonoBehaviour {
     public Vector3 cameraDirection;
 
     public bool cornerRotate = true;
-    private float t = 1.0f;
+    //private float t = 1.0f;
 	// Use this for initialization
 	void Start () {
         pSystems = GetComponentsInChildren<ParticleSystem>();

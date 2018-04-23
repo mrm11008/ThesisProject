@@ -74,7 +74,7 @@ public class Rotate : MonoBehaviour {
 
 	void LateUpdate() {
 		var fromAngle = transform.rotation;
-		var toAngle = Quaternion.Euler (transform.eulerAngles + new Vector3 (90f, 0f, 0f));
+		//var toAngle = Quaternion.Euler (transform.eulerAngles + new Vector3 (90f, 0f, 0f));
 
 
         if ((GM.instance.winScreen.activeSelf == false && GM.instance.gameOverScreen.activeSelf == false) && GM.instance.levelComplete == false)

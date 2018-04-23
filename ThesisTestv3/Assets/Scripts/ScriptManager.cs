@@ -153,6 +153,7 @@ public class ScriptManager : MonoBehaviour {
     {
         if (category == "intro" && emotion == "happy")
         {
+            print("play lvl 1 intro");
             var l = happyIntroUtterances.Length;
             var i = Random.Range(0, l);
             audso.PlayOneShot(happyIntroUtterances[0].clip);

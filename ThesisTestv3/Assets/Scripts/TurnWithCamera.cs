@@ -124,7 +124,7 @@ public class TurnWithCamera : MonoBehaviour {
     void LateUpdate()
     {
         var fromAngle = transform.rotation;
-        var toAngle = Quaternion.Euler(transform.eulerAngles + new Vector3(90f, 0f, 0f));
+        //var toAngle = Quaternion.Euler(transform.eulerAngles + new Vector3(90f, 0f, 0f));
 
 
 

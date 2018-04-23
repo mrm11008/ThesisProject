@@ -27,7 +27,7 @@ public class Player : MonoBehaviour {
     public Animator robot;
     private bool playAnim = true;
     private float animWaitTime = 0f;
-    static int idleState = Animator.StringToHash("Robot_Idle");
+    // int idleState = Animator.StringToHash("Robot_Idle");
     // Use this for initialization
     
     void Start () {
@@ -241,7 +241,7 @@ public class Player : MonoBehaviour {
         {
             //your code here
             var d = Instantiate(coinParticles, pos, Quaternion.identity);
-            Vector3 v = new Vector3(Random.Range(0, 1f), Random.Range(0, 1f), Random.Range(0, 1f));
+            //Vector3 v = new Vector3(Random.Range(0, 1f), Random.Range(0, 1f), Random.Range(0, 1f));
             d.GetComponent<Rigidbody>().AddForce(Random.insideUnitSphere.normalized * Random.Range(5, 20f));
 
 
