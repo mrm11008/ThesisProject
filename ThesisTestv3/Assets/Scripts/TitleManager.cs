@@ -60,16 +60,38 @@ public class TitleManager : MonoBehaviour {
         }
     }
 
-    public void StartGame()
+    public void StartGameHappy()
     {
+        Manager.instance.angryChar = false;
+
         SceneManager.LoadScene(1);
+        
         if (GM.instance != null && ScriptManager.instance != null)
         {
-            if (ScriptManager.instance.angryChar == true)
+            if (Manager.instance.angryChar == true)
             {
                 ScriptManager.instance.PlayScript("intro", "angry");
 
             } else
+            {
+                ScriptManager.instance.PlayScript("intro", "happy");
+
+            }
+        }
+    }
+    public void StartGameAngry()
+    {
+        Manager.instance.angryChar = true;
+        SceneManager.LoadScene(1);
+
+        if (GM.instance != null && ScriptManager.instance != null)
+        {
+            if (Manager.instance.angryChar == true)
+            {
+                ScriptManager.instance.PlayScript("intro", "angry");
+
+            }
+            else
             {
                 ScriptManager.instance.PlayScript("intro", "happy");
 

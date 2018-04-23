@@ -117,6 +117,10 @@ public class ScriptManager : MonoBehaviour {
 
     private void Start()
     {
+        if (Manager.instance != null)
+        {
+            angryChar = Manager.instance.angryChar;
+        }
         //example code
         clip.clip = clipOne;
         clip.priority = 2;
@@ -324,6 +328,10 @@ public class ScriptManager : MonoBehaviour {
 
     private void Update()
     {
+        if (Manager.instance != null)
+        {
+            angryChar = Manager.instance.angryChar;
+        }
         elapsedTime -= Time.deltaTime;
         if (elapsedTime <=0)
         {
