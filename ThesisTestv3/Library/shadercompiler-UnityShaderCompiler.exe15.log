@@ -1,0 +1,52 @@
+Base path: C:/Program Files/Unity/Editor/Data
+Cmd: initializeCompiler
+Cmd: disassembleShader
+  api=4 insize=666 outsize=1616 ok=1
+Cmd: compileSnippet
+  api=1 type=1 insize=14809 outsize=408 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: disassembleShader
+  api=1 insize=408 outsize=745 ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=5385 outsize=1218 kw=SPOT pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME ok=1
+Cmd: disassembleShader
+  api=4 insize=1218 outsize=2445 ok=1
+Cmd: disassembleShader
+  api=4 insize=2022 outsize=3639 ok=1
+Cmd: disassembleShader
+  api=1 insize=2000 outsize=3237 ok=1
+Cmd: disassembleShader
+  api=1 insize=752 outsize=1254 ok=1
+Cmd: disassembleShader
+  api=1 insize=640 outsize=1101 ok=1
+Cmd: disassembleShader
+  api=4 insize=1218 outsize=2445 ok=1
+Cmd: disassembleShader
+  api=1 insize=884 outsize=1430 ok=1
+Cmd: disassembleShader
+  api=4 insize=2022 outsize=3639 ok=1
+Cmd: disassembleShader
+  api=1 insize=1336 outsize=2242 ok=1
+Cmd: disassembleShader
+  api=4 insize=1830 outsize=3223 ok=1
+Cmd: disassembleShader
+  api=4 insize=2022 outsize=3639 ok=1
+Cmd: disassembleShader
+  api=4 insize=806 outsize=1920 ok=1
+Cmd: disassembleShader
+  api=4 insize=3046 outsize=4992 ok=1
+Cmd: disassembleShader
+  api=4 insize=666 outsize=1616 ok=1
+Cmd: disassembleShader
+  api=4 insize=806 outsize=1920 ok=1
+Cmd: compileSnippet
+  api=1 type=1 insize=1273 outsize=116 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: disassembleShader
+  api=1 insize=116 outsize=142 ok=1
+Cmd: disassembleShader
+  api=1 insize=2000 outsize=3237 ok=1
+Cmd: disassembleShader
+  api=1 insize=424 outsize=779 ok=1
+Cmd: disassembleShader
+  api=1 insize=1144 outsize=1901 ok=1
+Cmd: disassembleShader
+  api=1 insize=752 outsize=1254 ok=1

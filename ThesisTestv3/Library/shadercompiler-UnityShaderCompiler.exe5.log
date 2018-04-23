@@ -1,0 +1,48 @@
+Base path: C:/Program Files/Unity/Editor/Data
+Cmd: initializeCompiler
+Cmd: compileSnippet
+  api=4 type=0 insize=16599 outsize=2614 kw=DIRECTIONAL SHADOWS_SCREEN VERTEXLIGHT_ON pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME ok=1
+Cmd: disassembleShader
+  api=4 insize=2614 outsize=4451 ok=1
+Cmd: disassembleShader
+  api=4 insize=1218 outsize=2442 ok=1
+Cmd: compileSnippet
+  api=1 type=1 insize=5384 outsize=720 kw=POINT pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: disassembleShader
+  api=1 insize=720 outsize=1191 ok=1
+Cmd: compileSnippet
+  api=1 type=0 insize=16602 outsize=2000 kw=DIRECTIONAL VERTEXLIGHT_ON pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: disassembleShader
+  api=1 insize=2000 outsize=3237 ok=1
+Cmd: compileSnippet
+  api=1 type=1 insize=14811 outsize=408 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: disassembleShader
+  api=1 insize=408 outsize=745 ok=1
+Cmd: disassembleShader
+  api=1 insize=1336 outsize=2242 ok=1
+Cmd: disassembleShader
+  api=4 insize=1218 outsize=2445 ok=1
+Cmd: disassembleShader
+  api=4 insize=1286 outsize=2508 ok=1
+Cmd: disassembleShader
+  api=4 insize=1886 outsize=3428 ok=1
+Cmd: disassembleShader
+  api=1 insize=752 outsize=1254 ok=1
+Cmd: disassembleShader
+  api=4 insize=1886 outsize=3428 ok=1
+Cmd: disassembleShader
+  api=4 insize=1218 outsize=2445 ok=1
+Cmd: disassembleShader
+  api=4 insize=642 outsize=1589 ok=1
+Cmd: disassembleShader
+  api=1 insize=408 outsize=745 ok=1
+Cmd: disassembleShader
+  api=1 insize=752 outsize=1254 ok=1
+Cmd: disassembleShader
+  api=4 insize=1830 outsize=3223 ok=1
+Cmd: disassembleShader
+  api=1 insize=148 outsize=206 ok=1
+Cmd: disassembleShader
+  api=4 insize=642 outsize=1589 ok=1
+Cmd: disassembleShader
+  api=4 insize=1286 outsize=2508 ok=1

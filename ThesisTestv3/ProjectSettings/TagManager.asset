@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Button
+  - PressurePlate
+  - EdgeTrigger
+  - Wall
+  - Ground
+  - Block
+  - StopPad
+  - TeleportPad
+  - Constraint
+  - MovingPlatform
+  - PerspectiveBlock
+  - GravityShift
+  - Coin
+  - death
+  - Spikes
+  - WinBlock
+  - Xparticles
+  - Yparticles
+  - Zparticles
+  - W
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Spikes
+  - Wall
+  - Border
+  - Ground
+  - City
+  - DeathParticles
+  - SparkParticles
+  - Background
+  - Player
+  - Boundry
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Laser
+    uniqueID: 883915973
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0

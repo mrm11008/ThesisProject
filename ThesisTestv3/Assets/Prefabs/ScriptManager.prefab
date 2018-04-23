@@ -1,0 +1,382 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1981902014460734}
+  m_IsPrefabParent: 1
+--- !u!1 &1981902014460734
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4076864032567718}
+  - component: {fileID: 114655733489286928}
+  - component: {fileID: 82707595959212504}
+  m_Layer: 0
+  m_Name: ScriptManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4076864032567718
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1981902014460734}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &82707595959212504
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1981902014460734}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 0.2
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!114 &114655733489286928
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1981902014460734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bebb7e7cb43caaa4bb5150333d49d0af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clipOne: {fileID: 8300000, guid: b7aa3d8066e3db44d8097f3f8e725402, type: 3}
+  clipTwo: {fileID: 8300000, guid: cded0864976d512408f1e545c870bee4, type: 3}
+  rotationsBeforeFall: 0
+  angryChar: 0
+  happyInstructionUtterance:
+    clip: {fileID: 8300000, guid: f2400d6644f46594983e32d824ceb462, type: 3}
+    priority: 11
+  happyIntroUtterances:
+  - clip: {fileID: 8300000, guid: 2bfbcd0bda6560d40b523adb3789066a, type: 3}
+    priority: 0
+  happyLevelIntroUtterances:
+  - clip: {fileID: 8300000, guid: 80bb6b3bb989dc747a23c91bce74f6ad, type: 3}
+    priority: 14
+  - clip: {fileID: 8300000, guid: e8c99aae387514b44986df014661f82b, type: 3}
+    priority: 14
+  - clip: {fileID: 8300000, guid: 8b406f17fcc60754ca0d0552d9e993ef, type: 3}
+    priority: 14
+  - clip: {fileID: 8300000, guid: acec36cabd38ff140a06a7afe6285444, type: 3}
+    priority: 14
+  - clip: {fileID: 8300000, guid: 87758cc642aa21043890bca9b11c5a87, type: 3}
+    priority: 14
+  - clip: {fileID: 8300000, guid: cffe85916478a43448beeacc0c901ee0, type: 3}
+    priority: 14
+  - clip: {fileID: 8300000, guid: f8f3843fd061dd34e81af5a948f3a303, type: 3}
+    priority: 14
+  happyRotationUtterances:
+  - clip: {fileID: 0}
+    priority: 0
+  - clip: {fileID: 0}
+    priority: 0
+  - clip: {fileID: 0}
+    priority: 0
+  - clip: {fileID: 0}
+    priority: 0
+  happyCircleUtterances:
+  - clip: {fileID: 8300000, guid: d1d234a394aa7714f917e4f7dd7fdec1, type: 3}
+    priority: 3
+  - clip: {fileID: 8300000, guid: 00b9a66cc54df0d499d3c4f50df5789c, type: 3}
+    priority: 3
+  happyQEUtterances:
+  - clip: {fileID: 8300000, guid: 1a5cf3271c8f6ed40abc5f87df139292, type: 3}
+    priority: 4
+  - clip: {fileID: 8300000, guid: 634bf8e32eda1bb4d9bb1c5e47e88f04, type: 3}
+    priority: 4
+  - clip: {fileID: 8300000, guid: 86a9a977cd981024a87660de66cee9e5, type: 3}
+    priority: 4
+  happyElapsedTimeUtterances:
+  - clip: {fileID: 8300000, guid: 19a503db3a259cd4e83ae50bd24fb2f0, type: 3}
+    priority: 5
+  - clip: {fileID: 8300000, guid: e2853128e904d2d4fa3effac307cfd02, type: 3}
+    priority: 5
+  - clip: {fileID: 8300000, guid: cdbddf76e8f11fb4aa13ccdf88e9483f, type: 3}
+    priority: 5
+  - clip: {fileID: 8300000, guid: 0426cca970918e441aa833612c872233, type: 3}
+    priority: 5
+  - clip: {fileID: 8300000, guid: 99286adacb17c3646bd2e12859f9386d, type: 3}
+    priority: 5
+  - clip: {fileID: 8300000, guid: 48e58a971e04da449857870212707422, type: 3}
+    priority: 5
+  - clip: {fileID: 8300000, guid: 9d3a5c43a713d804b94352621c940583, type: 3}
+    priority: 5
+  happyCoinWithoutMoveUtterance:
+    clip: {fileID: 8300000, guid: 4b2a233a37258ca40b442cd597d00b3b, type: 3}
+    priority: 10
+  happyFinishWithoutCoinsUtterance:
+    clip: {fileID: 8300000, guid: 9a770aeed146ad14e96a41ee75e6986e, type: 3}
+    priority: 10
+  happyFirstMovingPlatformUtterance:
+    clip: {fileID: 8300000, guid: c50c15774da434f44a8f92700bac16b9, type: 3}
+    priority: 7
+  happyFirstSidewaysPlatformUtterance:
+    clip: {fileID: 8300000, guid: c888aae294f78d74a9f93fa687cf5522, type: 3}
+    priority: 11
+  happyLevelCompleteUtterances:
+  - clip: {fileID: 8300000, guid: 9068d76d46eba1c4785507370a667997, type: 3}
+    priority: 15
+  - clip: {fileID: 8300000, guid: 2f1fec319c33a1a4fb5fc16caff097fe, type: 3}
+    priority: 15
+  - clip: {fileID: 8300000, guid: 7ecb4502b6b968944b30fb8d4104cf74, type: 3}
+    priority: 15
+  - clip: {fileID: 8300000, guid: 1ca56527b098d9047b74889914ed0dae, type: 3}
+    priority: 15
+  - clip: {fileID: 8300000, guid: 46aed79de533a0346a2bd31bf62f0370, type: 3}
+    priority: 15
+  - clip: {fileID: 8300000, guid: 47ff520b8469f75478ff3654b40abf61, type: 3}
+    priority: 15
+  - clip: {fileID: 8300000, guid: 42024bbb476da94419998ba6f3c02aec, type: 3}
+    priority: 15
+  happyNoFallUtterances:
+  - clip: {fileID: 8300000, guid: 4a01705530d78624bba4515a0c2d8d42, type: 3}
+    priority: 2
+  - clip: {fileID: 8300000, guid: 6b31ab54f36a97841b8e1d304efcce45, type: 3}
+    priority: 2
+  - clip: {fileID: 8300000, guid: ba9a9b37a4f639a429bbe3df0c5eb3a2, type: 3}
+    priority: 2
+  happyDeathUtterances:
+  - clip: {fileID: 8300000, guid: eb2176f9093b9d74fba7c93e56066762, type: 3}
+    priority: 16
+  - clip: {fileID: 8300000, guid: 13796b0ea0f14e5499d7a40c6363d706, type: 3}
+    priority: 16
+  - clip: {fileID: 8300000, guid: b29ee7935d55cfa42b3cf96a31db2e11, type: 3}
+    priority: 16
+  happyRespawnUtterances:
+  - clip: {fileID: 8300000, guid: 87a9b759a79bd984ba9fb5f378249109, type: 3}
+    priority: 0
+  - clip: {fileID: 8300000, guid: 47d1f6ee16b641a4d9ef9d5e07d5dae4, type: 3}
+    priority: 0
+  - clip: {fileID: 8300000, guid: a5480b07fd9482b47a4398b2a19e7f37, type: 3}
+    priority: 0
+  happyRespawnWallUtterances:
+  - clip: {fileID: 8300000, guid: 185347aa4d2a3334cbfc19e6c1bdc5f5, type: 3}
+    priority: 12
+  happyRespawnSpikeUtterances:
+  - clip: {fileID: 8300000, guid: 53a49723db273164e96fc4971f17ae72, type: 3}
+    priority: 12
+  happyRespawnBoundryUtterances:
+  - clip: {fileID: 8300000, guid: 382589d706c5cd34095be8c11eb872b5, type: 3}
+    priority: 12
+  happyRotNoFallUtterances: []
+  angryInstructionUtterance:
+    clip: {fileID: 8300000, guid: bd810c2b40ad3fd49b0bb2177ff88ea6, type: 3}
+    priority: 11
+  angryIntroUtterances:
+  - clip: {fileID: 8300000, guid: 97ef4327330c8074abe52c01843a756b, type: 3}
+    priority: 11
+  angryLevelIntroUtterances:
+  - clip: {fileID: 8300000, guid: bd810c2b40ad3fd49b0bb2177ff88ea6, type: 3}
+    priority: 13
+  - clip: {fileID: 8300000, guid: a22287244ad50a0449b42008d3b53403, type: 3}
+    priority: 13
+  - clip: {fileID: 8300000, guid: 0d4b2b6dcceafff49be25970a9c86203, type: 3}
+    priority: 13
+  - clip: {fileID: 8300000, guid: cf23de4934fba454b9e7d1da09f1e0d8, type: 3}
+    priority: 13
+  - clip: {fileID: 8300000, guid: 1134c6fa2686067448963b6585bacae1, type: 3}
+    priority: 13
+  - clip: {fileID: 8300000, guid: 27e025dc82145134b9c970c19875b826, type: 3}
+    priority: 13
+  - clip: {fileID: 8300000, guid: 41998c14cb26cc442b8f1147c8f0fa2b, type: 3}
+    priority: 13
+  angryRotationUtterances:
+  - clip: {fileID: 8300000, guid: e04eddac90d52854e9f0bf23e2d48a63, type: 3}
+    priority: 1
+  - clip: {fileID: 8300000, guid: 212e5e528fda65e4480edef277f4947a, type: 3}
+    priority: 1
+  - clip: {fileID: 8300000, guid: 31fbcc77174616c45ab0f8322c191bba, type: 3}
+    priority: 1
+  - clip: {fileID: 8300000, guid: 3f6c85709dead174c88c984e38a5ba7e, type: 3}
+    priority: 1
+  - clip: {fileID: 8300000, guid: 3257b90fe44375c418b1c34256d94ef4, type: 3}
+    priority: 1
+  - clip: {fileID: 8300000, guid: 7f3c2a6f58db48c4badabeae17a719fd, type: 3}
+    priority: 1
+  - clip: {fileID: 8300000, guid: 4607ab8178f476b4a950e0603a067aa7, type: 3}
+    priority: 1
+  - clip: {fileID: 8300000, guid: e6ce58d364a42b241861ea1d01912d26, type: 3}
+    priority: 1
+  - clip: {fileID: 8300000, guid: bd9d74c2e3363f0439ef79c79cd2d232, type: 3}
+    priority: 1
+  - clip: {fileID: 8300000, guid: 3f6c85709dead174c88c984e38a5ba7e, type: 3}
+    priority: 1
+  angryCircleUtterances:
+  - clip: {fileID: 8300000, guid: a337667726037974c99dd19cb422fcd7, type: 3}
+    priority: 3
+  - clip: {fileID: 8300000, guid: 825bcad4d822ab646a4d2eb7395d5996, type: 3}
+    priority: 3
+  - clip: {fileID: 8300000, guid: 0e8c852886312614ba27fb7699b2efbc, type: 3}
+    priority: 3
+  angryQEUtterances:
+  - clip: {fileID: 8300000, guid: b28a835e190d9294da7b8a64ed6eb6f3, type: 3}
+    priority: 4
+  - clip: {fileID: 8300000, guid: 90678473e3da086499a1ab58abb6b0ee, type: 3}
+    priority: 4
+  - clip: {fileID: 8300000, guid: db5d5dc8f020ff04f80a3bfe9c502e1b, type: 3}
+    priority: 4
+  angryElapsedTimeUtterances:
+  - clip: {fileID: 8300000, guid: 1b8d5e27990d1c540bee0655f0342721, type: 3}
+    priority: 5
+  - clip: {fileID: 8300000, guid: 302c433625e09b048926cdb2f8b36201, type: 3}
+    priority: 5
+  - clip: {fileID: 8300000, guid: 47afb4649023fd34ab85dae6cd1d34e3, type: 3}
+    priority: 5
+  - clip: {fileID: 8300000, guid: b663f366f1f9083459ef2d5a44e0810f, type: 3}
+    priority: 5
+  - clip: {fileID: 8300000, guid: b663f366f1f9083459ef2d5a44e0810f, type: 3}
+    priority: 5
+  - clip: {fileID: 8300000, guid: b663f366f1f9083459ef2d5a44e0810f, type: 3}
+    priority: 5
+  - clip: {fileID: 8300000, guid: b663f366f1f9083459ef2d5a44e0810f, type: 3}
+    priority: 5
+  angryCoinWithoutMoveUtterance:
+    clip: {fileID: 8300000, guid: 5616d9b5d62125e45b3e7e2bb5a4fb9e, type: 3}
+    priority: 10
+  angryFinishWithoutCoinsUtterance:
+    clip: {fileID: 8300000, guid: f7d8576f31ba57546b8632bc66866946, type: 3}
+    priority: 10
+  angryFirstMovingPlatformUtterance:
+    clip: {fileID: 8300000, guid: 6e101f2e313b8d344a6510e1c4fb10b1, type: 3}
+    priority: 7
+  angryFirstSidewaysPlatformUtterance:
+    clip: {fileID: 8300000, guid: 1f240565dc29d01468346cbe0aebdf29, type: 3}
+    priority: 11
+  angryLevelCompleteUtterances:
+  - clip: {fileID: 8300000, guid: f0fa83c092dc25d4f9facca13a4ed931, type: 3}
+    priority: 15
+  - clip: {fileID: 8300000, guid: d9fc341d2d3a33c4d8ed297bae80e882, type: 3}
+    priority: 15
+  - clip: {fileID: 8300000, guid: 94f0a5878c6a6b544b17d5e12f94f819, type: 3}
+    priority: 15
+  - clip: {fileID: 8300000, guid: 0916f3c1a1c38d947839f0d245445f31, type: 3}
+    priority: 15
+  - clip: {fileID: 8300000, guid: 13ad272398e5ec146a53314b83ed793c, type: 3}
+    priority: 15
+  - clip: {fileID: 8300000, guid: a1286110cad9b654aa728c44dbbbfa64, type: 3}
+    priority: 15
+  - clip: {fileID: 8300000, guid: ea6e32d7086eddb4691feb4635609afd, type: 3}
+    priority: 15
+  angryNoFallUtterances:
+  - clip: {fileID: 8300000, guid: f44d50224b8ad134d92558085ce66047, type: 3}
+    priority: 2
+  angryDeathUtterances:
+  - clip: {fileID: 8300000, guid: b7cf19e65036c4b47a2b8319e4c5e1fa, type: 3}
+    priority: 16
+  - clip: {fileID: 8300000, guid: 79f0f59f48ec8714b8952c16374fc67e, type: 3}
+    priority: 16
+  angryRespawnUtterances:
+  - clip: {fileID: 8300000, guid: 17109ba8deeb5a5458afc7968c091b50, type: 3}
+    priority: 12
+  - clip: {fileID: 8300000, guid: b584ebae760f9374294d1c696cd8fc92, type: 3}
+    priority: 12
+  angryRespawnWallUtterances:
+  - clip: {fileID: 8300000, guid: 2f7895b18105f2f499717f64c3349f77, type: 3}
+    priority: 12
+  angryRespawnSpikeUtterances:
+  - clip: {fileID: 8300000, guid: b58d4d938e3c49a4d8fe431144d60ab3, type: 3}
+    priority: 12
+  angryRespawnBoundryUtterances:
+  - clip: {fileID: 8300000, guid: 18991d27fb0397f44a6ebd4c5f30b64b, type: 3}
+    priority: 12
+  angryRotNoFallUtterances: []
+  elapsedTime: 20
+  clip:
+    clip: {fileID: 0}
+    priority: 0
+  clip2:
+    clip: {fileID: 0}
+    priority: 0
+  currentPriority: 0
