@@ -22,6 +22,12 @@ public class ControlScreenRotate : MonoBehaviour {
 
     private void OnMouseOver()
     {
-        transform.Rotate(rotate * Time.deltaTime * 50);
+
+        transform.Rotate(rotate * Time.unscaledDeltaTime * 125);
+    }
+
+    public void ResetUI()
+    {
+        transform.rotation = Quaternion.Euler(Vector3.zero);
     }
 }

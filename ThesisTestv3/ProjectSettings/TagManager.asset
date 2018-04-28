@@ -24,6 +24,7 @@ TagManager:
   - Yparticles
   - Zparticles
   - W
+  - Space
   layers:
   - Default
   - TransparentFX
@@ -43,7 +44,7 @@ TagManager:
   - Background
   - Player
   - Boundry
-  - 
+  - Controls
   - 
   - 
   - 

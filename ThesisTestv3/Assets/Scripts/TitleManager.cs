@@ -19,13 +19,8 @@ public class TitleManager : MonoBehaviour {
     private float timeToReachTarget = 0.5f;
     private float t = 0;
 
-    public ControlScreenRotate wSpin;
-    public ControlScreenRotate aSpin;
-    public ControlScreenRotate sSpin;
-    public ControlScreenRotate dSpin;
-    public ControlScreenRotate qSpin;
-    public ControlScreenRotate eSpin;
 
+    public GameObject controlsObjects;
 
 
     // Use this for initialization
@@ -47,17 +42,8 @@ public class TitleManager : MonoBehaviour {
 
         }
 
-        var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
-        if (Physics.Raycast(ray, out hit))
-        {
-            if (hit.transform.tag == "W")
-            {
-                print("ON HOVER");
-                hit.transform.gameObject.GetComponent<ControlScreenRotate>().spin = true;                
-            }
-            
-        }
+
+
     }
 
     public void StartGameHappy()
@@ -108,6 +94,8 @@ public class TitleManager : MonoBehaviour {
         titleScreen.SetActive(true);
         levelSelect.SetActive(false);
         controlScreen.SetActive(false);
+        controlsObjects.SetActive(false);
+
     }
     public void ControlScreen()
     {
@@ -118,6 +106,7 @@ public class TitleManager : MonoBehaviour {
         titleScreen.SetActive(false);
         levelSelect.SetActive(false);
         controlScreen.SetActive(true);
+        controlsObjects.SetActive(true);
     }
     public void LevelSelect()
     {
@@ -128,14 +117,9 @@ public class TitleManager : MonoBehaviour {
         titleScreen.SetActive(false);
         levelSelect.SetActive(true);
         controlScreen.SetActive(false);
+        controlsObjects.SetActive(false);
+
     }
 
-    private void OnMouseOver()
-    {
-        if (gameObject.name == "W")
-        {
-            wSpin.spin = true;
-        }
-    }
 
 }

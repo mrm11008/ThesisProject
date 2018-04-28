@@ -36,8 +36,17 @@ public class GM : MonoBehaviour {
     //GAMEOVER
     public GameObject gameOverScreen;
     public GameObject winScreen;
+    public GameObject winScreenFinal;
+
+    public GameObject otherWinScreen;
     public GameObject scoreScreen;
     public GameObject pauseScreen;
+    public GameObject controlScreen;
+    public GameObject controlScreenGameObject;
+    public GameObject currentScreen;
+    public GameObject UIBackdrop;
+    public GameObject controlBackdrop;
+
 
     private bool winoverScreen = false;
     private bool pauseToggle = false;
@@ -74,7 +83,7 @@ public class GM : MonoBehaviour {
         fall = player.GetComponent<Fall>();
 		audso = this.GetComponent<AudioSource> ();
         gameOverScreen.SetActive(false);
-        winScreen.SetActive(false);
+        //winScreen.SetActive(false);
 
         currentLevelManager = FindObjectOfType<LevelManager>();
         numCoinsNeeded = currentLevelManager.coinsNeeded;
@@ -83,6 +92,32 @@ public class GM : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+        if (SceneManager.GetActiveScene().buildIndex == 7)
+        {
+            winScreen = winScreenFinal;
+        } else
+        {
+            winScreen = otherWinScreen;
+        }
+
+
+        if (winScreen.activeSelf == true || gameOverScreen.activeSelf == true || pauseScreen.activeSelf == true)
+        {
+            UIBackdrop.SetActive(true);
+        } else
+        {
+            UIBackdrop.SetActive(false);
+
+        }
+        if (controlScreen.activeSelf == true)
+        {
+            controlBackdrop.SetActive(true);
+        }
+        else
+        {
+            controlBackdrop.SetActive(false);
+
+        }
 
         if (levelComplete == true)
         {
@@ -104,12 +139,26 @@ public class GM : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.Escape) && winoverScreen == false)
         {
-            if (pauseToggle)
+            if (controlScreen.activeSelf == true)
+            {
+
+                controlScreen.SetActive(false);
+                controlScreenGameObject.SetActive(false);
+                currentScreen.SetActive(true);
+                controlScreenGameObject.GetComponentInChildren<SpacebarUI>().ResetUI();
+                ControlScreenRotate[] ControlScreenObjects = controlScreenGameObject.GetComponentsInChildren<ControlScreenRotate>();
+                foreach (ControlScreenRotate csr in ControlScreenObjects)
+                {
+                    csr.ResetUI();
+                }
+            }
+            else if (pauseToggle)
             {
                 ScriptManager.instance.audso.UnPause();
                 Time.timeScale = 1;
                 pauseScreen.SetActive(false);
-            } else
+            }
+            else
             {
                 ScriptManager.instance.audso.Pause();
 
@@ -117,6 +166,8 @@ public class GM : MonoBehaviour {
                 pauseScreen.SetActive(true);
             }
             pauseToggle = !pauseToggle;
+
+
         }
 
         if (winScreen.activeSelf == true || gameOverScreen.activeSelf == true || pauseScreen.activeSelf == true)
@@ -192,17 +243,74 @@ public class GM : MonoBehaviour {
         ScriptManager.instance.RestartUtterance();
 	}
 
+    public void RestartLevel()
+    {
+        coins = 0;
+        gameOverScreen.SetActive(false);
+        pauseScreen.SetActive(false);
+        winScreen.SetActive(false);
+        Time.timeScale = 1f;
+        ScriptManager.instance.ResetPriority();
+        ScriptManager.instance.LevelIntroductionUtterance(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+    }
+
     public void MainMenu()
     {
         Time.timeScale = 1f;
         gameOverScreen.SetActive(false);
         winScreen.SetActive(false);
         pauseScreen.SetActive(false);
+        controlScreen.SetActive(false);
+        controlScreenGameObject.SetActive(false);
         levelComplete = false;
         ScriptManager.instance.audso.Stop();
         coins = 0;
         SceneManager.LoadScene(0);
+        Destroy(ScriptManager.instance);
     }
+
+    public void ControlsScreen()
+    {
+        if (gameOverScreen.activeSelf ==true )
+        {
+            currentScreen = gameOverScreen;
+        }
+        else if (pauseScreen.activeSelf == true)
+        {
+            currentScreen = pauseScreen;
+        }
+        else if (winScreen.activeSelf == true)
+        {
+            currentScreen = winScreen;
+        }
+
+        if (controlScreen.activeSelf == true)
+        {
+
+            controlScreen.SetActive(false);
+            controlScreenGameObject.SetActive(false);
+            currentScreen.SetActive(true);
+            controlScreenGameObject.GetComponentInChildren<SpacebarUI>().ResetUI();
+            ControlScreenRotate[] ControlScreenObjects = controlScreenGameObject.GetComponentsInChildren<ControlScreenRotate>();
+            foreach (ControlScreenRotate csr in ControlScreenObjects)
+            {
+                csr.ResetUI();
+            }
+        }
+        else
+        {
+            Time.timeScale = 0f;
+            gameOverScreen.SetActive(false);
+            winScreen.SetActive(false);
+            pauseScreen.SetActive(false);
+            controlScreen.SetActive(true);
+            controlScreenGameObject.SetActive(true);
+        }
+
+    }
+
     public void GameOver()
     {
         print("gameover");
@@ -275,6 +383,8 @@ public class GM : MonoBehaviour {
     {
         Time.timeScale = 1f;
         pauseScreen.SetActive(false);
+        ScriptManager.instance.audso.UnPause();
+
         pauseToggle = !pauseToggle;
     }
 
