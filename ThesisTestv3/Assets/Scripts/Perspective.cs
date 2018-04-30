@@ -107,6 +107,8 @@ public class Perspective : MonoBehaviour {
             }
                 if (tilted == true )
                 {
+                    //temp.y = -0.375f;
+
                     temp.y = 1.15f;
                 }
                 else if (sideWays == false)

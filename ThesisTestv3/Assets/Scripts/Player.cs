@@ -261,7 +261,7 @@ public class Player : MonoBehaviour {
     public void RandomAnimation()
     {
         int randomNumber = Random.Range(1, 7);
-        print("anim");
+        //print("anim");
 
         robot.SetTrigger("idle" + randomNumber);
         playAnim = false;

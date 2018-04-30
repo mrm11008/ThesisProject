@@ -76,69 +76,72 @@ public class Rotate : MonoBehaviour {
 		var fromAngle = transform.rotation;
 		//var toAngle = Quaternion.Euler (transform.eulerAngles + new Vector3 (90f, 0f, 0f));
 
-
-        if ((GM.instance.winScreen.activeSelf == false && GM.instance.gameOverScreen.activeSelf == false) && GM.instance.levelComplete == false)
+        if (GM.instance != null)
         {
-            if ((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) && turning == false && onRotatingPlatform == false && playerMoving == false)
+            if ((GM.instance.winScreen.activeSelf == false && GM.instance.gameOverScreen.activeSelf == false) && GM.instance.levelComplete == false)
             {
-                ScriptManager.instance.IncrementWCount();
-                ScriptManager.instance.NotQORECount();
+                if ((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) && turning == false && onRotatingPlatform == false && playerMoving == false)
+                {
+                    ScriptManager.instance.IncrementWCount();
+                    ScriptManager.instance.NotQORECount();
 
-                StartCoroutine(Rotation(this.transform, new Vector3(90, 0, 0), rotateTime));
-                GM.instance.IncrementRotations();
+                    StartCoroutine(Rotation(this.transform, new Vector3(90, 0, 0), rotateTime));
+                    GM.instance.IncrementRotations();
 
-            }
+                }
 
-            if ((Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S)) && turning == false && onRotatingPlatform == false && playerMoving == false)
-            {
-                ScriptManager.instance.IncrementSCount();
-                ScriptManager.instance.NotQORECount();
+                if ((Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S)) && turning == false && onRotatingPlatform == false && playerMoving == false)
+                {
+                    ScriptManager.instance.IncrementSCount();
+                    ScriptManager.instance.NotQORECount();
 
-                StartCoroutine(Rotation(this.transform, new Vector3(-90, 0, 0), rotateTime));
-                GM.instance.IncrementRotations();
+                    StartCoroutine(Rotation(this.transform, new Vector3(-90, 0, 0), rotateTime));
+                    GM.instance.IncrementRotations();
 
-            }
-
-
-            if ((Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D)) && turning == false && onRotatingPlatform == false && playerMoving == false)
-            {
-                ScriptManager.instance.IncrementDCount();
-                ScriptManager.instance.NotQORECount();
-
-                StartCoroutine(Rotation(this.transform, new Vector3(0, -90, 0), rotateTime));
-                GM.instance.IncrementRotations();
+                }
 
 
-            }
+                if ((Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D)) && turning == false && onRotatingPlatform == false && playerMoving == false)
+                {
+                    ScriptManager.instance.IncrementDCount();
+                    ScriptManager.instance.NotQORECount();
 
-            if ((Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A)) && turning == false && onRotatingPlatform == false && playerMoving == false)
-            {
+                    StartCoroutine(Rotation(this.transform, new Vector3(0, -90, 0), rotateTime));
+                    GM.instance.IncrementRotations();
 
-                ScriptManager.instance.IncrementACount();
-                ScriptManager.instance.NotQORECount();
 
-                StartCoroutine(Rotation(this.transform, new Vector3(0, 90, 0), rotateTime));
-                GM.instance.IncrementRotations();
+                }
 
-            }
-            if (Input.GetKeyDown(KeyCode.Q) && turning == false && onRotatingPlatform == false && playerMoving == false)
-            {
-                ScriptManager.instance.IncrementQCount();
-                ScriptManager.instance.ResetQECount();
+                if ((Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A)) && turning == false && onRotatingPlatform == false && playerMoving == false)
+                {
 
-                StartCoroutine(Rotation(this.transform, new Vector3(0, 0, -90), rotateSidewaysTime));
-                GM.instance.IncrementRotations();
+                    ScriptManager.instance.IncrementACount();
+                    ScriptManager.instance.NotQORECount();
 
-            }
-            if (Input.GetKeyDown(KeyCode.E) && turning == false && onRotatingPlatform == false && playerMoving == false)
-            {
-                ScriptManager.instance.IncrementECount();
-                ScriptManager.instance.ResetQECount();
-                StartCoroutine(Rotation(this.transform, new Vector3(0, 0, 90), rotateSidewaysTime));
-                GM.instance.IncrementRotations();
+                    StartCoroutine(Rotation(this.transform, new Vector3(0, 90, 0), rotateTime));
+                    GM.instance.IncrementRotations();
 
+                }
+                if (Input.GetKeyDown(KeyCode.Q) && turning == false && onRotatingPlatform == false && playerMoving == false)
+                {
+                    ScriptManager.instance.IncrementQCount();
+                    ScriptManager.instance.ResetQECount();
+
+                    StartCoroutine(Rotation(this.transform, new Vector3(0, 0, -90), rotateSidewaysTime));
+                    GM.instance.IncrementRotations();
+
+                }
+                if (Input.GetKeyDown(KeyCode.E) && turning == false && onRotatingPlatform == false && playerMoving == false)
+                {
+                    ScriptManager.instance.IncrementECount();
+                    ScriptManager.instance.ResetQECount();
+                    StartCoroutine(Rotation(this.transform, new Vector3(0, 0, 90), rotateSidewaysTime));
+                    GM.instance.IncrementRotations();
+
+                }
             }
         }
+
 
     }
 

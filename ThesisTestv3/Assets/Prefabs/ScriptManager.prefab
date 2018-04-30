@@ -132,10 +132,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bebb7e7cb43caaa4bb5150333d49d0af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audso: {fileID: 0}
   clipOne: {fileID: 8300000, guid: b7aa3d8066e3db44d8097f3f8e725402, type: 3}
   clipTwo: {fileID: 8300000, guid: cded0864976d512408f1e545c870bee4, type: 3}
   rotationsBeforeFall: 0
-  angryChar: 0
+  angryChar: 1
+  firstMovingPlatformToggle: 0
+  secondMovingPlatformToggle: 0
   happyInstructionUtterance:
     clip: {fileID: 8300000, guid: f2400d6644f46594983e32d824ceb462, type: 3}
     priority: 11
@@ -201,6 +204,9 @@ MonoBehaviour:
     priority: 10
   happyFirstMovingPlatformUtterance:
     clip: {fileID: 8300000, guid: c50c15774da434f44a8f92700bac16b9, type: 3}
+    priority: 7
+  happySecondMovingPlatformUtterance:
+    clip: {fileID: 8300000, guid: 1d1c883cd7f9a01438e4147bce71e067, type: 3}
     priority: 7
   happyFirstSidewaysPlatformUtterance:
     clip: {fileID: 8300000, guid: c888aae294f78d74a9f93fa687cf5522, type: 3}
@@ -316,11 +322,11 @@ MonoBehaviour:
     priority: 5
   - clip: {fileID: 8300000, guid: b663f366f1f9083459ef2d5a44e0810f, type: 3}
     priority: 5
-  - clip: {fileID: 8300000, guid: b663f366f1f9083459ef2d5a44e0810f, type: 3}
+  - clip: {fileID: 8300000, guid: 49bf89bb3f8624b4c815e219c8713cef, type: 3}
     priority: 5
-  - clip: {fileID: 8300000, guid: b663f366f1f9083459ef2d5a44e0810f, type: 3}
+  - clip: {fileID: 8300000, guid: 28e72bf256cbc17449c9424e80fbe1c5, type: 3}
     priority: 5
-  - clip: {fileID: 8300000, guid: b663f366f1f9083459ef2d5a44e0810f, type: 3}
+  - clip: {fileID: 8300000, guid: 01ec207df03f81041901b6f13f853b3f, type: 3}
     priority: 5
   angryCoinWithoutMoveUtterance:
     clip: {fileID: 8300000, guid: 5616d9b5d62125e45b3e7e2bb5a4fb9e, type: 3}
@@ -330,6 +336,9 @@ MonoBehaviour:
     priority: 10
   angryFirstMovingPlatformUtterance:
     clip: {fileID: 8300000, guid: 6e101f2e313b8d344a6510e1c4fb10b1, type: 3}
+    priority: 7
+  angrySecondMovingPlatformUtterance:
+    clip: {fileID: 8300000, guid: 41693b98785a9e54598ef13b2d7ccd1a, type: 3}
     priority: 7
   angryFirstSidewaysPlatformUtterance:
     clip: {fileID: 8300000, guid: 1f240565dc29d01468346cbe0aebdf29, type: 3}

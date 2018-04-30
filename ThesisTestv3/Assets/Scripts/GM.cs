@@ -46,7 +46,7 @@ public class GM : MonoBehaviour {
     public GameObject currentScreen;
     public GameObject UIBackdrop;
     public GameObject controlBackdrop;
-
+    public GameObject UICamera;
 
     private bool winoverScreen = false;
     private bool pauseToggle = false;
@@ -100,6 +100,13 @@ public class GM : MonoBehaviour {
             winScreen = otherWinScreen;
         }
 
+        if (winScreen.activeSelf == true || gameOverScreen.activeSelf == true || pauseScreen.activeSelf == true || controlScreen.active == true)
+        {
+            UICamera.SetActive(true);
+        } else
+        {
+            UICamera.SetActive(false);
+        }
 
         if (winScreen.activeSelf == true || gameOverScreen.activeSelf == true || pauseScreen.activeSelf == true)
         {
@@ -211,7 +218,7 @@ public class GM : MonoBehaviour {
 		rotationsBeforeShift++;
 		if (gravityShiftCheck == gravityShifts && rotationsBeforeShift > 4) {
 			rotationsBeforeShift = 0;
-			print ("play feedback");
+			//print ("play feedback");
 
 		}
 		rotations++;
@@ -238,6 +245,8 @@ public class GM : MonoBehaviour {
         //SceneManager.LoadScene ("Playground - Copy");
         gameOverScreen.SetActive(false);
         coins = 0;
+        rotations = 0;
+        gravityShifts = 0;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
        // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         ScriptManager.instance.RestartUtterance();
@@ -246,6 +255,8 @@ public class GM : MonoBehaviour {
     public void RestartLevel()
     {
         coins = 0;
+        rotations = 0;
+        gravityShifts = 0;
         gameOverScreen.SetActive(false);
         pauseScreen.SetActive(false);
         winScreen.SetActive(false);
@@ -268,6 +279,8 @@ public class GM : MonoBehaviour {
         ScriptManager.instance.audso.Stop();
         coins = 0;
         SceneManager.LoadScene(0);
+
+        Destroy(this.gameObject);
         Destroy(ScriptManager.instance);
     }
 
@@ -325,6 +338,8 @@ public class GM : MonoBehaviour {
         levelComplete = false;
         winScreen.SetActive(false);
         coins = 0;
+        rotations = 0;
+        gravityShifts = 0;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         
         ScriptManager.instance.ResetPriority();
@@ -339,6 +354,7 @@ public class GM : MonoBehaviour {
             levelComplete = true;
             //winScreen.SetActive(true);
             ScriptManager.instance.LevelCompleteUtterance(SceneManager.GetActiveScene().buildIndex);
+            PrintLevelCompletionData();
             currentLevelManager = FindObjectOfType<LevelManager>();
             currentLevelManager.WinExplode();
         } else if (coins < numCoinsNeeded)
@@ -388,5 +404,16 @@ public class GM : MonoBehaviour {
         pauseToggle = !pauseToggle;
     }
 
+
+    public void PrintLevelCompletionData()
+    {
+        //int playerID = 0;
+        print("Player Identification Number: ");
+        print("Level " + SceneManager.GetActiveScene().buildIndex + "Number of Deaths: ");
+        print("Level " + SceneManager.GetActiveScene().buildIndex + "Gravity Shifts" + GM.instance.gravityShifts);
+        print("Level " + SceneManager.GetActiveScene().buildIndex + "Rotations: " + GM.instance.rotations);
+        print("Level " + SceneManager.GetActiveScene().buildIndex + "Completion Time: " + GM.instance.rotations);
+
+    }
 
 }

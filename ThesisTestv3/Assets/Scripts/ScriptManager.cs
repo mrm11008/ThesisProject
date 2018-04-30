@@ -25,7 +25,9 @@ public class ScriptManager : MonoBehaviour {
 
     private bool coinWithoutMoveToggle = false;
     private bool finishWithoutCoinToggle = false;
-    private bool firstMovingPlatformToggle = false;
+    public bool firstMovingPlatformToggle = false;
+    public bool secondMovingPlatformToggle = false;
+
     private bool firstSidewaysPlatformToggle = false;
 
     //HAPPY
@@ -39,6 +41,8 @@ public class ScriptManager : MonoBehaviour {
     public ScriptUtterance happyCoinWithoutMoveUtterance;
     public ScriptUtterance happyFinishWithoutCoinsUtterance;
     public ScriptUtterance happyFirstMovingPlatformUtterance;
+    public ScriptUtterance happySecondMovingPlatformUtterance;
+
     public ScriptUtterance happyFirstSidewaysPlatformUtterance;
 
     public ScriptUtterance[] happyLevelCompleteUtterances;
@@ -63,6 +67,8 @@ public class ScriptManager : MonoBehaviour {
     public ScriptUtterance angryCoinWithoutMoveUtterance;
     public ScriptUtterance angryFinishWithoutCoinsUtterance;
     public ScriptUtterance angryFirstMovingPlatformUtterance;
+    public ScriptUtterance angrySecondMovingPlatformUtterance;
+
     public ScriptUtterance angryFirstSidewaysPlatformUtterance;
 
     public ScriptUtterance[] angryLevelCompleteUtterances;
@@ -157,7 +163,7 @@ public class ScriptManager : MonoBehaviour {
     {
         if (category == "intro" && emotion == "happy")
         {
-            print("play lvl 1 intro");
+            //print("play lvl 1 intro");
             var l = happyIntroUtterances.Length;
             var i = Random.Range(0, l);
             audso.PlayOneShot(happyIntroUtterances[0].clip);
@@ -413,7 +419,7 @@ public class ScriptManager : MonoBehaviour {
     //UTTERANCES
     public void NoFallUtterance()
     {
-        print("You didnt even fall!");
+        //print("You didnt even fall!");
         if (angryChar == true)
         {
             PlayScript("nofall", "angry");
@@ -437,7 +443,7 @@ public class ScriptManager : MonoBehaviour {
     public void RotationsUtterance()
     {
         //calling increment/reset in Fall and Rotate, resetting count after one utterance (might want to change)
-        print("Round and round we go!!");
+        //print("Round and round we go!!");
         if (angryChar == true)
         {
             PlayScript("rotations", "angry");
@@ -450,7 +456,7 @@ public class ScriptManager : MonoBehaviour {
     public void CircleUtterance()
     {
         //calling increment/reset in Fall and Rotate, resetting count after one utterance (might want to change)
-        print("Round and round we go!!");
+        //print("Round and round we go!!");
         ResetKeyCounts();
         if (angryChar == true)
         {
@@ -485,7 +491,7 @@ public class ScriptManager : MonoBehaviour {
     public void QEUtterance()
     {
         //calling increment/reset in Fall and Rotate, resetting count after one utterance (might want to change)
-        print("Round and round we go!!");
+        //print("Round and round we go!!");
         if (angryChar == true)
         {
             //PlayScript("qe", "angry");
@@ -518,13 +524,13 @@ public class ScriptManager : MonoBehaviour {
 
     public void LevelIntroductionUtterance(int sceneIndex)
     {
-        print("lv intro!!");
+        //print("lv intro!!");
         if (angryChar == true)
         {
-            print(sceneIndex);
+            //print(sceneIndex);
             if (currentClip.priority < angryLevelIntroUtterances[sceneIndex-1].priority)
             {
-                print("intro!!");
+                //print("intro!!");
                 audso.Stop();
                 audso.PlayOneShot(angryLevelIntroUtterances[sceneIndex-1].clip);
                 startTime = Time.time;
@@ -534,7 +540,7 @@ public class ScriptManager : MonoBehaviour {
         {
             if (currentClip.priority < happyLevelIntroUtterances[sceneIndex-1].priority)
             {
-                print("intro!!");
+                //print("intro!!");
                 audso.Stop();
                 audso.PlayOneShot(happyLevelIntroUtterances[sceneIndex-1].clip);
                 startTime = Time.time;
@@ -546,7 +552,7 @@ public class ScriptManager : MonoBehaviour {
     public void LevelCompleteUtterance(int sceneIndex)
     {
         //calling increment/reset in Fall and Rotate, resetting count after one utterance (might want to change)
-        print("Round and round we go!!");
+        //print("Round and round we go!!");
         if (angryChar == true)
         {
             if (currentClip.priority < angryLevelCompleteUtterances[sceneIndex-1].priority)
@@ -578,7 +584,7 @@ public class ScriptManager : MonoBehaviour {
 
     public void NotEnoughCoinsUttererance()
     {
-        print("you dont have all the coins idiot");
+        //print("you dont have all the coins idiot");
 
         if (angryChar == true)
         {
@@ -613,7 +619,7 @@ public class ScriptManager : MonoBehaviour {
         {
             if (coinWithoutMoveToggle == false)
             {
-                print("you got a coint without moving!!");
+                //print("you got a coint without moving!!");
                 introComplete = false;
                 audso.Stop();
                 audso.PlayOneShot(angryCoinWithoutMoveUtterance.clip);
@@ -625,7 +631,7 @@ public class ScriptManager : MonoBehaviour {
         {
             if (coinWithoutMoveToggle == false)
             {
-                print("you got a coint without moving!!");
+                //print("you got a coint without moving!!");
                 introComplete = false;
                 audso.Stop();
                 audso.PlayOneShot(happyCoinWithoutMoveUtterance.clip);
@@ -641,12 +647,12 @@ public class ScriptManager : MonoBehaviour {
 
     public void MovingPlatformUtterance()
     {
-        print("Oh wow the idiot can move a platform");
+        //print("Oh wow the idiot can move a platform");
         if (angryChar == true)
         {
             if (firstMovingPlatformToggle == false)
             {
-                print("you got a coint without moving!!");
+                //print("you got a coint without moving!!");
                 introComplete = false;
                 audso.Stop();
                 audso.PlayOneShot(angryFirstMovingPlatformUtterance.clip);
@@ -659,7 +665,7 @@ public class ScriptManager : MonoBehaviour {
         {
             if (firstMovingPlatformToggle == false)
             {
-                print("you got a coint without moving!!");
+                //print("you got a coint without moving!!");
                 introComplete = false;
                 audso.Stop();
                 audso.PlayOneShot(happyFirstMovingPlatformUtterance.clip);
@@ -671,6 +677,38 @@ public class ScriptManager : MonoBehaviour {
 
 
     }
+
+    public void SecondMovingPlatformUtterance()
+    {
+        //print("Oh wow the idiot can move a platform");
+        if (angryChar == true)
+        {
+            if (secondMovingPlatformToggle == false)
+            {
+                //print("you got a coint without moving!!");
+                introComplete = false;
+                audso.Stop();
+                audso.PlayOneShot(angrySecondMovingPlatformUtterance.clip);
+                startTime = Time.time;
+                currentClip = angrySecondMovingPlatformUtterance;
+                secondMovingPlatformToggle = true;
+            }
+        }
+        else
+        {
+            if (secondMovingPlatformToggle == false)
+            {
+                //print("you got a coint without moving!!");
+                introComplete = false;
+                audso.Stop();
+                audso.PlayOneShot(happySecondMovingPlatformUtterance.clip);
+                startTime = Time.time;
+                currentClip = happySecondMovingPlatformUtterance;
+                secondMovingPlatformToggle = true;
+            }
+        }
+    }
+
 
     public void SidewaysPlatformUtterance()
     {
@@ -742,27 +780,27 @@ public class ScriptManager : MonoBehaviour {
 
     public void DeathFromWallUtterance()
     {
-        print("THat is a wall idiot!!");
+        //print("THat is a wall idiot!!");
         deathByWall = true;
         DeathUtterance();
     }
     public void DeathFromBoundryUtterance()
     {
         deathByBoundry = true;
-        print("THat is the boundry idiot!!");
+        //print("THat is the boundry idiot!!");
         DeathUtterance();
     }
     public void DeathBySpikesUtterance()
     {
         deathBySpike = true;
-        print("THose are spikes idiot!!");
+        //print("THose are spikes idiot!!");
         DeathUtterance();
 
     }
 
     public void LevelCompleteUtterance()
     {
-        print("the level is done idiot!");
+        //print("the level is done idiot!");
     }
     public void ElapsedTimeUtterance()
     {

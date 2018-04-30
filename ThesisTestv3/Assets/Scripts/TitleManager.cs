@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class TitleManager : MonoBehaviour {
 
+    public static TitleManager instance = null;
+
+
     public GameObject titleScreen;
     public GameObject levelSelect;
     public GameObject controlScreen;
@@ -22,7 +25,15 @@ public class TitleManager : MonoBehaviour {
 
     public GameObject controlsObjects;
 
+    void Awake()
+    {
+        if (instance == null)
+            instance = this;
+        else if (instance != this)
+            Destroy(gameObject);
 
+
+    }
     // Use this for initialization
     void Start () {
         titlePos = title.transform.position;

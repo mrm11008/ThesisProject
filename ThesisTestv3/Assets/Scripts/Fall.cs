@@ -751,7 +751,7 @@ public class Fall : MonoBehaviour {
 
         if (sparkCheck != null && sparkCheck.tag == "Ground")
         {
-            print("!!!!!!!!!!!!!");
+            //print("!!!!!!!!!!!!!");
             var s = Instantiate(groundSparks, sparkPoint, Quaternion.LookRotation(fallDirection));
             s.transform.parent = sparkParent.transform;
             GM.instance.GroundHitSound();
@@ -760,8 +760,8 @@ public class Fall : MonoBehaviour {
         }
         if (sparkCheck != null && sparkCheck.tag == "Wall")
         { 
-            print("!!!!!!!!!!!!!");
-            print(sparkCheck);
+            //print("!!!!!!!!!!!!!");
+            //print(sparkCheck);
             var s = Instantiate(impactSparks, sparkPoint, Quaternion.LookRotation(fallDirection));
             s.transform.parent = sparkParent.transform;
             GM.instance.WallHitSound();

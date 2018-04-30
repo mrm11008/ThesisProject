@@ -8,6 +8,8 @@ public class SpacebarUI : MonoBehaviour {
     public bool spaceBarFall = false;
     private Vector3 ogPos;
 
+
+
     // Use this for initialization
     void Start () {
         ogPos = this.transform.localPosition;	
@@ -21,7 +23,7 @@ public class SpacebarUI : MonoBehaviour {
         {
             if (hit.transform.tag == "Space")
             {
-                print("ON HOVER");
+                //print("ON HOVER");
                 spaceBarFall = true;
                 spaceBarReset = 0.75f;
             }

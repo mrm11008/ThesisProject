@@ -30,4 +30,7 @@ public class Manager : MonoBehaviour {
 	void Update () {
 		
 	}
+
+
+
 }

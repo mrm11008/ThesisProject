@@ -9,6 +9,9 @@ public class CoinPerspective : MonoBehaviour {
 
     private Vector3 cameraDirection;
     public Rotate camera;
+
+    public bool platformConstraint = false;
+
 	// Use this for initialization
 	void Start () {
         camera = FindObjectOfType<Rotate>();
@@ -24,8 +27,15 @@ public class CoinPerspective : MonoBehaviour {
         if (((Vector3.Dot(cameraDirection, Vector3.up) > 0.9f) && (Vector3.Dot(cameraDirection, Vector3.up) < 1.1f) && camera.turning == false))
         {
             Vector3 temp = transform.position;
+            if (platformConstraint == true)
+            {
+                temp.y = -1f;
+            } else
+            {
+                 //temp.y = 0f;
+                temp.y = 1.5f;
 
-            temp.y = 1.5f;
+            }
             // temp.y = 2.25f;
             /*
             if (sideWays == true)
@@ -51,7 +61,15 @@ public class CoinPerspective : MonoBehaviour {
         else if (((Vector3.Dot(cameraDirection, -Vector3.up) > 0.9f) && (Vector3.Dot(cameraDirection, -Vector3.up) < 1.1f)) && camera.turning == false)
         {
             Vector3 temp = transform.position;
-            temp.y = 1.5f;
+            if (platformConstraint == true)
+            {
+                temp.y = -1f;
+            }
+            else
+            {
+                temp.y = 1.5f;
+
+            }
             /*
             if (sideWays == true)
             {

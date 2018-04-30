@@ -138,8 +138,16 @@ public class MovingPlatform : MonoBehaviour {
 
 
 	public IEnumerator MovePlatform(Transform thisTransform, Vector3 distance, float time) {
-        ScriptManager.instance.MovingPlatformUtterance();
-		print ("Rotate called");
+        if (ScriptManager.instance.firstMovingPlatformToggle == false)
+        {
+            ScriptManager.instance.MovingPlatformUtterance();
+        }
+        else if (ScriptManager.instance.secondMovingPlatformToggle == false && ScriptManager.instance.secondMovingPlatformToggle == false && ScriptManager.instance.isPlaying() == false)
+        {
+            ScriptManager.instance.SecondMovingPlatformUtterance();
+        }
+
+        print ("Rotate called");
 		moving = true;
 		Vector3 startPosition = thisTransform.position;
 		Vector3 endPosition = this.transform.position + distance;
