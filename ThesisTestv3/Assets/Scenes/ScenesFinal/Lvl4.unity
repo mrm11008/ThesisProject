@@ -20,11 +20,11 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 0, g: 0.16862746, b: 0.16862746, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
+  m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
@@ -640,6 +640,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   originalPosition: {x: 0, y: 0, z: 0}
   camera: {fileID: 0}
+  platformConstraint: 0
 --- !u!1001 &870668648
 Prefab:
   m_ObjectHideFlags: 0
@@ -794,6 +795,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   originalPosition: {x: 0, y: 0, z: 0}
   camera: {fileID: 0}
+  platformConstraint: 0
 --- !u!4 &950054061 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4709510452384416, guid: c5c509f454c5d97418697988998fceac,
@@ -817,6 +819,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   originalPosition: {x: 0, y: 0, z: 0}
   camera: {fileID: 0}
+  platformConstraint: 0
 --- !u!1001 &1063259252
 Prefab:
   m_ObjectHideFlags: 0
@@ -1272,6 +1275,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   originalPosition: {x: 0, y: 0, z: 0}
   camera: {fileID: 0}
+  platformConstraint: 0
 --- !u!1001 &1286683964
 Prefab:
   m_ObjectHideFlags: 0
@@ -1671,6 +1675,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   originalPosition: {x: 0, y: 0, z: 0}
   camera: {fileID: 0}
+  platformConstraint: 0
 --- !u!4 &1643324426 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4709510452384416, guid: c5c509f454c5d97418697988998fceac,
@@ -2026,6 +2031,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   originalPosition: {x: 0, y: 0, z: 0}
   camera: {fileID: 0}
+  platformConstraint: 0
 --- !u!1001 &2038033551
 Prefab:
   m_ObjectHideFlags: 0
@@ -2174,3 +2180,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   originalPosition: {x: 0, y: 0, z: 0}
   camera: {fileID: 0}
+  platformConstraint: 0

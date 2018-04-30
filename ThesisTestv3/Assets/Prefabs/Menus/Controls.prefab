@@ -130,7 +130,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1212509103783886
 GameObject:
   m_ObjectHideFlags: 1
@@ -761,7 +761,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1556570515094496}
-  m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
+  m_LocalRotation: {x: 0.35112295, y: 0.35112295, z: -0.6137693, w: 0.6137693}
   m_LocalPosition: {x: -0.286, y: 1.63, z: -0.2}
   m_LocalScale: {x: 7, y: 7, z: 7}
   m_Children:
@@ -769,7 +769,7 @@ Transform:
   - {fileID: 4540412051745312}
   m_Father: {fileID: 4334860137310330}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: -90}
+  m_LocalEulerAnglesHint: {x: 59.546, y: 0, z: -90.00001}
 --- !u!4 &4054097935127356
 Transform:
   m_ObjectHideFlags: 1
@@ -832,15 +832,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1620275452463120}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.87, y: -0.33, z: -0.2}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.13, y: 1, z: -0.2}
   m_LocalScale: {x: 7.000015, y: 7.000011, z: 7.000018}
   m_Children:
   - {fileID: 4321494090015420}
   - {fileID: 4241371980562886}
   m_Father: {fileID: 4598639579619954}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4237395594759506
 Transform:
   m_ObjectHideFlags: 1
@@ -1111,7 +1111,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1363625684228964}
-  m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
+  m_LocalRotation: {x: 0.6098768, y: -0.6098768, z: 0.35784113, w: 0.35784113}
   m_LocalPosition: {x: 0.35, y: 1.6300013, z: -0.2000002}
   m_LocalScale: {x: 7.000023, y: 7.0000124, z: 7.00002}
   m_Children:
@@ -1119,7 +1119,7 @@ Transform:
   - {fileID: 4026897529121724}
   m_Father: {fileID: 4125962705817338}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 119.196, y: 0, z: 89.99999}
 --- !u!4 &4671079257846296
 Transform:
   m_ObjectHideFlags: 1
@@ -1225,15 +1225,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1941481047191290}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.54, y: -0.27, z: -0.2}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0.08, y: 1, z: -0.2}
   m_LocalScale: {x: 7.0000277, y: 7.000032, z: 7.000032}
   m_Children:
   - {fileID: 4715209416413362}
   - {fileID: 4428432486548122}
   m_Father: {fileID: 4809366370854468}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!4 &4936012394558108
 Transform:
   m_ObjectHideFlags: 1
@@ -2736,11 +2736,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9342a538750f7fc45b208fc686a0b24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButtonType: 0
+  thisButtonType: 7
   hoverMaterial: {fileID: 2100000, guid: fa0911e1d27561b4dad4bab9d7a07f97, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 60922163ae274f349a499bc06332356e, type: 2}
   saved: {fileID: 0}
   cameraUI: {fileID: 0}
+  controlScreenUI: 0
   mask:
     serializedVersion: 2
     m_Bits: 262144
@@ -2768,11 +2769,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9342a538750f7fc45b208fc686a0b24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButtonType: 0
+  thisButtonType: 7
   hoverMaterial: {fileID: 2100000, guid: fa0911e1d27561b4dad4bab9d7a07f97, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 60922163ae274f349a499bc06332356e, type: 2}
   saved: {fileID: 0}
   cameraUI: {fileID: 0}
+  controlScreenUI: 0
   mask:
     serializedVersion: 2
     m_Bits: 262144
@@ -2787,11 +2789,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9342a538750f7fc45b208fc686a0b24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButtonType: 0
+  thisButtonType: 7
   hoverMaterial: {fileID: 2100000, guid: fa0911e1d27561b4dad4bab9d7a07f97, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 60922163ae274f349a499bc06332356e, type: 2}
   saved: {fileID: 0}
   cameraUI: {fileID: 0}
+  controlScreenUI: 0
   mask:
     serializedVersion: 2
     m_Bits: 262144
@@ -2806,11 +2809,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9342a538750f7fc45b208fc686a0b24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButtonType: 0
+  thisButtonType: 7
   hoverMaterial: {fileID: 2100000, guid: fa0911e1d27561b4dad4bab9d7a07f97, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 60922163ae274f349a499bc06332356e, type: 2}
   saved: {fileID: 0}
   cameraUI: {fileID: 0}
+  controlScreenUI: 0
   mask:
     serializedVersion: 2
     m_Bits: 262144
@@ -2825,11 +2829,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9342a538750f7fc45b208fc686a0b24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButtonType: 0
+  thisButtonType: 7
   hoverMaterial: {fileID: 2100000, guid: fa0911e1d27561b4dad4bab9d7a07f97, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 60922163ae274f349a499bc06332356e, type: 2}
   saved: {fileID: 0}
   cameraUI: {fileID: 0}
+  controlScreenUI: 0
   mask:
     serializedVersion: 2
     m_Bits: 262144
@@ -2857,11 +2862,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9342a538750f7fc45b208fc686a0b24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButtonType: 0
+  thisButtonType: 7
   hoverMaterial: {fileID: 2100000, guid: fa0911e1d27561b4dad4bab9d7a07f97, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 60922163ae274f349a499bc06332356e, type: 2}
   saved: {fileID: 0}
   cameraUI: {fileID: 0}
+  controlScreenUI: 0
   mask:
     serializedVersion: 2
     m_Bits: 262144
@@ -2876,11 +2882,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9342a538750f7fc45b208fc686a0b24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButtonType: 0
+  thisButtonType: 7
   hoverMaterial: {fileID: 2100000, guid: fa0911e1d27561b4dad4bab9d7a07f97, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 60922163ae274f349a499bc06332356e, type: 2}
   saved: {fileID: 0}
   cameraUI: {fileID: 0}
+  controlScreenUI: 0
   mask:
     serializedVersion: 2
     m_Bits: 262144
@@ -2895,11 +2902,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9342a538750f7fc45b208fc686a0b24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButtonType: 0
+  thisButtonType: 7
   hoverMaterial: {fileID: 2100000, guid: fa0911e1d27561b4dad4bab9d7a07f97, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 60922163ae274f349a499bc06332356e, type: 2}
   saved: {fileID: 0}
   cameraUI: {fileID: 0}
+  controlScreenUI: 0
   mask:
     serializedVersion: 2
     m_Bits: 262144
@@ -2914,11 +2922,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9342a538750f7fc45b208fc686a0b24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButtonType: 0
+  thisButtonType: 7
   hoverMaterial: {fileID: 2100000, guid: fa0911e1d27561b4dad4bab9d7a07f97, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 60922163ae274f349a499bc06332356e, type: 2}
   saved: {fileID: 0}
   cameraUI: {fileID: 0}
+  controlScreenUI: 0
   mask:
     serializedVersion: 2
     m_Bits: 262144
@@ -2933,11 +2942,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9342a538750f7fc45b208fc686a0b24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButtonType: 0
+  thisButtonType: 7
   hoverMaterial: {fileID: 2100000, guid: fa0911e1d27561b4dad4bab9d7a07f97, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 60922163ae274f349a499bc06332356e, type: 2}
   saved: {fileID: 0}
   cameraUI: {fileID: 0}
+  controlScreenUI: 0
   mask:
     serializedVersion: 2
     m_Bits: 262144
@@ -2965,11 +2975,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9342a538750f7fc45b208fc686a0b24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButtonType: 0
+  thisButtonType: 7
   hoverMaterial: {fileID: 2100000, guid: fa0911e1d27561b4dad4bab9d7a07f97, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 60922163ae274f349a499bc06332356e, type: 2}
   saved: {fileID: 0}
   cameraUI: {fileID: 0}
+  controlScreenUI: 0
   mask:
     serializedVersion: 2
     m_Bits: 262144
@@ -2984,11 +2995,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9342a538750f7fc45b208fc686a0b24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButtonType: 0
+  thisButtonType: 7
   hoverMaterial: {fileID: 2100000, guid: fa0911e1d27561b4dad4bab9d7a07f97, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 60922163ae274f349a499bc06332356e, type: 2}
   saved: {fileID: 0}
   cameraUI: {fileID: 0}
+  controlScreenUI: 0
   mask:
     serializedVersion: 2
     m_Bits: 262144
@@ -3003,11 +3015,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9342a538750f7fc45b208fc686a0b24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButtonType: 0
+  thisButtonType: 7
   hoverMaterial: {fileID: 2100000, guid: fa0911e1d27561b4dad4bab9d7a07f97, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 60922163ae274f349a499bc06332356e, type: 2}
   saved: {fileID: 0}
   cameraUI: {fileID: 0}
+  controlScreenUI: 0
   mask:
     serializedVersion: 2
     m_Bits: 262144
@@ -3035,11 +3048,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9342a538750f7fc45b208fc686a0b24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButtonType: 0
+  thisButtonType: 7
   hoverMaterial: {fileID: 2100000, guid: fa0911e1d27561b4dad4bab9d7a07f97, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 60922163ae274f349a499bc06332356e, type: 2}
   saved: {fileID: 0}
   cameraUI: {fileID: 0}
+  controlScreenUI: 0
   mask:
     serializedVersion: 2
     m_Bits: 262144
@@ -3067,11 +3081,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9342a538750f7fc45b208fc686a0b24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButtonType: 0
+  thisButtonType: 7
   hoverMaterial: {fileID: 2100000, guid: fa0911e1d27561b4dad4bab9d7a07f97, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 60922163ae274f349a499bc06332356e, type: 2}
   saved: {fileID: 0}
   cameraUI: {fileID: 0}
+  controlScreenUI: 0
   mask:
     serializedVersion: 2
     m_Bits: 262144
@@ -3086,11 +3101,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9342a538750f7fc45b208fc686a0b24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButtonType: 0
+  thisButtonType: 7
   hoverMaterial: {fileID: 2100000, guid: fa0911e1d27561b4dad4bab9d7a07f97, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 60922163ae274f349a499bc06332356e, type: 2}
   saved: {fileID: 0}
   cameraUI: {fileID: 0}
+  controlScreenUI: 0
   mask:
     serializedVersion: 2
     m_Bits: 262144
@@ -3110,6 +3126,7 @@ MonoBehaviour:
   defaultMaterial: {fileID: 2100000, guid: 60922163ae274f349a499bc06332356e, type: 2}
   saved: {fileID: 0}
   cameraUI: {fileID: 0}
+  controlScreenUI: 0
   mask:
     serializedVersion: 2
     m_Bits: 262144
@@ -3124,11 +3141,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9342a538750f7fc45b208fc686a0b24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButtonType: 0
+  thisButtonType: 7
   hoverMaterial: {fileID: 2100000, guid: fa0911e1d27561b4dad4bab9d7a07f97, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 60922163ae274f349a499bc06332356e, type: 2}
   saved: {fileID: 0}
   cameraUI: {fileID: 0}
+  controlScreenUI: 0
   mask:
     serializedVersion: 2
     m_Bits: 262144
@@ -3143,11 +3161,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9342a538750f7fc45b208fc686a0b24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButtonType: 0
+  thisButtonType: 7
   hoverMaterial: {fileID: 2100000, guid: fa0911e1d27561b4dad4bab9d7a07f97, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 60922163ae274f349a499bc06332356e, type: 2}
   saved: {fileID: 0}
   cameraUI: {fileID: 0}
+  controlScreenUI: 0
   mask:
     serializedVersion: 2
     m_Bits: 262144
@@ -3175,11 +3194,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9342a538750f7fc45b208fc686a0b24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButtonType: 0
+  thisButtonType: 7
   hoverMaterial: {fileID: 2100000, guid: fa0911e1d27561b4dad4bab9d7a07f97, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 60922163ae274f349a499bc06332356e, type: 2}
   saved: {fileID: 0}
   cameraUI: {fileID: 0}
+  controlScreenUI: 0
   mask:
     serializedVersion: 2
     m_Bits: 262144
@@ -3194,11 +3214,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9342a538750f7fc45b208fc686a0b24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButtonType: 0
+  thisButtonType: 7
   hoverMaterial: {fileID: 2100000, guid: fa0911e1d27561b4dad4bab9d7a07f97, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 60922163ae274f349a499bc06332356e, type: 2}
   saved: {fileID: 0}
   cameraUI: {fileID: 0}
+  controlScreenUI: 0
   mask:
     serializedVersion: 2
     m_Bits: 262144
@@ -3213,11 +3234,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9342a538750f7fc45b208fc686a0b24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButtonType: 0
+  thisButtonType: 7
   hoverMaterial: {fileID: 2100000, guid: fa0911e1d27561b4dad4bab9d7a07f97, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 60922163ae274f349a499bc06332356e, type: 2}
   saved: {fileID: 0}
   cameraUI: {fileID: 0}
+  controlScreenUI: 0
   mask:
     serializedVersion: 2
     m_Bits: 262144
@@ -3245,11 +3267,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9342a538750f7fc45b208fc686a0b24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButtonType: 0
+  thisButtonType: 7
   hoverMaterial: {fileID: 2100000, guid: fa0911e1d27561b4dad4bab9d7a07f97, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 60922163ae274f349a499bc06332356e, type: 2}
   saved: {fileID: 0}
   cameraUI: {fileID: 0}
+  controlScreenUI: 0
   mask:
     serializedVersion: 2
     m_Bits: 262144

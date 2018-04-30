@@ -159,5 +159,10 @@ public class HoverUI : MonoBehaviour {
             TitleManager.instance.TitleScreen();
 
         }
+        if (thisButtonType == ButtonType.Next)
+        {
+            GM.instance.NextLevel();
+
+        }
     }
 }

@@ -5,11 +5,13 @@ using UnityEngine;
 public class ControlScreenRotate : MonoBehaviour {
 
     public Vector3 rotate;
+    private Quaternion ogRot;
     public bool spin = false;
 	// Use this for initialization
 	void Start () {
-		
-	}
+
+        ogRot = this.transform.rotation;
+}
 	
 	// Update is called once per frame
 	void Update () {
@@ -24,6 +26,10 @@ public class ControlScreenRotate : MonoBehaviour {
     {
 
         transform.Rotate(rotate * Time.unscaledDeltaTime * 125);
+    }
+    void OnMouseExit()
+    {
+        transform.rotation = ogRot;
     }
 
     public void ResetUI()

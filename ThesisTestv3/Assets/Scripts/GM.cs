@@ -128,7 +128,7 @@ public class GM : MonoBehaviour {
 
         if (levelComplete == true)
         {
-            if (ScriptManager.instance.isPlaying() == false)
+            if (ScriptManager.instance.isPlaying() == false && controlScreen.activeSelf == false)
             {
                 winScreen.SetActive(true);
                 //levelComplete = false;
@@ -243,6 +243,7 @@ public class GM : MonoBehaviour {
 
 	public void DeathReset() {
         //SceneManager.LoadScene ("Playground - Copy");
+        Time.timeScale = 1f;
         gameOverScreen.SetActive(false);
         coins = 0;
         rotations = 0;
