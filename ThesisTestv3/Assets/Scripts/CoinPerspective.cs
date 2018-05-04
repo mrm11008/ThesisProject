@@ -12,6 +12,8 @@ public class CoinPerspective : MonoBehaviour {
 
     public bool platformConstraint = false;
 
+    public bool specialCase = false;
+
 	// Use this for initialization
 	void Start () {
         camera = FindObjectOfType<Rotate>();
@@ -30,7 +32,12 @@ public class CoinPerspective : MonoBehaviour {
             if (platformConstraint == true)
             {
                 temp.y = -1f;
-            } else
+            } else if (specialCase == true)
+            {
+                temp.y = -0.5f;
+
+            }
+            else 
             {
                  //temp.y = 0f;
                 temp.y = 1.5f;

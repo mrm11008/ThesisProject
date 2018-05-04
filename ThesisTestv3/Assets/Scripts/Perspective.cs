@@ -25,6 +25,8 @@ public class Perspective : MonoBehaviour {
     public bool flipped = false;
     //Code to declare the number of perspective positions
 
+    public bool sideWaysSpecial = false;
+
     // Use this for initialization
     void Start () {
 		originalPosition = this.transform.position;
@@ -108,8 +110,17 @@ public class Perspective : MonoBehaviour {
                 if (tilted == true )
                 {
                     //temp.y = -0.375f;
+                    if (sideWaysSpecial == true)
+                    {
 
-                    temp.y = 1.15f;
+                        temp.y = -.25f;
+
+                    }
+                    else
+                    {
+                        temp.y = 1.15f;
+
+                    }
                 }
                 else if (sideWays == false)
                 {
@@ -128,7 +139,16 @@ public class Perspective : MonoBehaviour {
                 } 
                 if (tilted == true)
                 {
-                    temp.y = 1.15f;
+                    if (sideWaysSpecial == true)
+                    {
+                        temp.y = 1.15f;
+
+                    }
+                    else
+                    {
+                        temp.y = 1.15f;
+
+                    }
                 }
                 else if (sideWays == false)
                 {

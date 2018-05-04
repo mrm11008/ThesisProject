@@ -490,7 +490,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4654775510213076, guid: ba794f9141c7628459edc5ae3a1c76f5, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.63
+      value: -2.04
       objectReference: {fileID: 0}
     - target: {fileID: 4654775510213076, guid: ba794f9141c7628459edc5ae3a1c76f5, type: 2}
       propertyPath: m_LocalPosition.z
@@ -520,17 +520,10 @@ Prefab:
       propertyPath: m_Name
       value: Coin (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 4654775510213076, guid: ba794f9141c7628459edc5ae3a1c76f5, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4654775510213076, guid: ba794f9141c7628459edc5ae3a1c76f5, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.5000007
-      objectReference: {fileID: 0}
-    - target: {fileID: 4654775510213076, guid: ba794f9141c7628459edc5ae3a1c76f5, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 0.5000005
+    - target: {fileID: 114243647797583416, guid: ba794f9141c7628459edc5ae3a1c76f5,
+        type: 2}
+      propertyPath: specialCase
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ba794f9141c7628459edc5ae3a1c76f5, type: 2}
@@ -732,6 +725,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 114554042792216168, guid: db1c453534d76f44eb708ab5ade71071,
+        type: 2}
+      propertyPath: sideWaysSpecial
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: db1c453534d76f44eb708ab5ade71071, type: 2}
   m_IsPrefabParent: 0
@@ -877,6 +875,7 @@ MonoBehaviour:
   originalPosition: {x: 0, y: 0, z: 0}
   camera: {fileID: 0}
   platformConstraint: 0
+  specialCase: 0
 --- !u!4 &413859483 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4709510452384416, guid: c5c509f454c5d97418697988998fceac,
@@ -2411,6 +2410,7 @@ MonoBehaviour:
   sideWays: 1
   tilted: 0
   flipped: 0
+  sideWaysSpecial: 0
 --- !u!4 &1628019667
 Transform:
   m_ObjectHideFlags: 0
@@ -2525,6 +2525,7 @@ MonoBehaviour:
   originalPosition: {x: 0, y: 0, z: 0}
   camera: {fileID: 0}
   platformConstraint: 0
+  specialCase: 0
 --- !u!114 &1746168459 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114554042792216168, guid: db1c453534d76f44eb708ab5ade71071,
@@ -2871,25 +2872,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5f47e436a78a75b44b382529062d9b3e, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1931021307 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1018014682815372, guid: ba794f9141c7628459edc5ae3a1c76f5,
-    type: 2}
-  m_PrefabInternal: {fileID: 292907498}
---- !u!114 &1931021308
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1931021307}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 245ad73916b926a4da47bac8c53be38b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  originalPosition: {x: 0, y: 0, z: 0}
-  camera: {fileID: 0}
-  platformConstraint: 0
 --- !u!1001 &1933769099
 Prefab:
   m_ObjectHideFlags: 0
@@ -3037,6 +3019,7 @@ MonoBehaviour:
   sideWays: 1
   tilted: 1
   flipped: 0
+  sideWaysSpecial: 1
 --- !u!4 &2098294698
 Transform:
   m_ObjectHideFlags: 0

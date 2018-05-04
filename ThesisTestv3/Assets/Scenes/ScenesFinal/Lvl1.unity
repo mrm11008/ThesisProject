@@ -482,11 +482,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 14
       objectReference: {fileID: 0}
-    - target: {fileID: 114531222934138882, guid: 653212c90b9224b4f95aebe9d1d44cdc,
-        type: 2}
-      propertyPath: angryChar
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 653212c90b9224b4f95aebe9d1d44cdc, type: 2}
   m_IsPrefabParent: 0
