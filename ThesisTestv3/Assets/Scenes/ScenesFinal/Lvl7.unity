@@ -135,8 +135,8 @@ MonoBehaviour:
   positiveMoveVector: {x: 0, y: 0, z: 3}
   negativeMoveVector: {x: 0, y: 0, z: -3}
   moveTime: 1
-  positiveMove: 0
-  negativeMove: 1
+  positiveMove: 1
+  negativeMove: 0
   platformPerspective: {fileID: 10267316}
   playerGravity: {fileID: 79576843}
   shift: 0
