@@ -135,8 +135,8 @@ MonoBehaviour:
   positiveMoveVector: {x: 0, y: 0, z: 3}
   negativeMoveVector: {x: 0, y: 0, z: -3}
   moveTime: 1
-  positiveMove: 0
-  negativeMove: 1
+  positiveMove: 1
+  negativeMove: 0
   platformPerspective: {fileID: 10267316}
   playerGravity: {fileID: 79576843}
   shift: 0
@@ -1760,8 +1760,8 @@ MonoBehaviour:
   positiveMoveVector: {x: 0, y: 0, z: 3}
   negativeMoveVector: {x: 0, y: 0, z: -3}
   moveTime: 1
-  positiveMove: 0
-  negativeMove: 1
+  positiveMove: 1
+  negativeMove: 0
   platformPerspective: {fileID: 1195677803}
   playerGravity: {fileID: 79576843}
   shift: 0
@@ -2981,7 +2981,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4559639423570066, guid: 35cedbfdb2c1b43469a3ef2542b6287f, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -1.5
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4559639423570066, guid: 35cedbfdb2c1b43469a3ef2542b6287f, type: 2}
       propertyPath: m_LocalRotation.x

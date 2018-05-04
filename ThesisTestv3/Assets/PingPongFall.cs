@@ -11,6 +11,6 @@ public class PingPongFall : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y, Mathf.PingPong(Time.time/2, 0.1f));
+        transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y, Mathf.PingPong(Time.unscaledTime/2, 0.1f));
     }
 }
