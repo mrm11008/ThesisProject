@@ -21,6 +21,9 @@ public class HoverUI : MonoBehaviour {
     public bool controlScreenUI = false;
 
     public LayerMask mask;
+
+    public bool playHoverSound = true;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -110,9 +113,15 @@ public class HoverUI : MonoBehaviour {
 
         if (hovering == true)
         {
+            if (playHoverSound == true)
+            {
+                Manager.instance.UIHoverSound();
+                playHoverSound = false;
+            }
             //this.transform.parent.localScale = new Vector3(2,2,2);
         } else
         {
+            playHoverSound = true;
             //this.transform.parent.localScale = new Vector3(1, 1, 1);
 
         }
@@ -126,42 +135,55 @@ public class HoverUI : MonoBehaviour {
         if (thisButtonType == ButtonType.Start)
         {
             TitleManager.instance.StartGameHappy();
-
+            Manager.instance.UIClickSound();
         }
         if (thisButtonType == ButtonType.Resume)
         {
             GM.instance.Resume();
+            Manager.instance.UIClickSound();
 
         }
         if (thisButtonType == ButtonType.ControlsInGame)
         {
             GM.instance.ControlsScreen();
+            Manager.instance.UIClickSound();
 
         }
         if (thisButtonType == ButtonType.Restart)
         {
             GM.instance.RestartLevel();
+            Manager.instance.UIClickSound();
 
         }
         if (thisButtonType == ButtonType.DeathReset)
         {
             GM.instance.DeathReset();
+            Manager.instance.UIClickSound();
 
         }
 
         if (thisButtonType == ButtonType.Controls)
         {
             TitleManager.instance.ControlScreen();
+            Manager.instance.UIClickSound();
 
         }
         if (thisButtonType == ButtonType.Back)
         {
             TitleManager.instance.TitleScreen();
+            Manager.instance.UIClickSound();
 
         }
         if (thisButtonType == ButtonType.Next)
         {
             GM.instance.NextLevel();
+            Manager.instance.UIClickSound();
+
+        }
+        if (thisButtonType == ButtonType.MainMenu)
+        {
+            GM.instance.MainMenu();
+            Manager.instance.UIClickSound();
 
         }
     }

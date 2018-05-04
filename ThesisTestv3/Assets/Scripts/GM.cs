@@ -100,7 +100,7 @@ public class GM : MonoBehaviour {
             winScreen = otherWinScreen;
         }
 
-        if (winScreen.activeSelf == true || gameOverScreen.activeSelf == true || pauseScreen.activeSelf == true || controlScreen.active == true)
+        if (winScreen.activeSelf == true || gameOverScreen.activeSelf == true || pauseScreen.activeSelf == true || controlScreen.activeSelf == true)
         {
             UICamera.SetActive(true);
         } else

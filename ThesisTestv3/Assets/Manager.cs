@@ -10,6 +10,11 @@ public class Manager : MonoBehaviour {
 
     public bool angryChar = false;
 
+
+    private AudioSource audso;
+    public AudioClip uiHover;
+    public AudioClip uiClick;
+
     void Awake()
     {
         if (instance == null)
@@ -23,7 +28,7 @@ public class Manager : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-		
+        audso = this.GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -31,6 +36,15 @@ public class Manager : MonoBehaviour {
 		
 	}
 
+    public void UIHoverSound()
+    {
+        audso.PlayOneShot(uiHover);
+    }
+
+    public void UIClickSound()
+    {
+        audso.PlayOneShot(uiClick);
+    }
 
 
 }
