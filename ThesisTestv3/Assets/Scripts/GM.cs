@@ -9,6 +9,7 @@ public class GM : MonoBehaviour {
 	public int rotations = 0;
 	public int gravityShifts = 0;
 	public int coins = 0;
+    private int deathCount = 0;
 
 	public int rotationsBeforeShift = 0;
 	public int gravityShiftCheck = 0;
@@ -248,6 +249,7 @@ public class GM : MonoBehaviour {
         coins = 0;
         rotations = 0;
         gravityShifts = 0;
+        deathCount++;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
        // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         ScriptManager.instance.RestartUtterance();
@@ -258,6 +260,7 @@ public class GM : MonoBehaviour {
         coins = 0;
         rotations = 0;
         gravityShifts = 0;
+        levelComplete = false;
         gameOverScreen.SetActive(false);
         pauseScreen.SetActive(false);
         winScreen.SetActive(false);
@@ -341,6 +344,7 @@ public class GM : MonoBehaviour {
         coins = 0;
         rotations = 0;
         gravityShifts = 0;
+        deathCount = 0;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         
         ScriptManager.instance.ResetPriority();
@@ -409,11 +413,19 @@ public class GM : MonoBehaviour {
     public void PrintLevelCompletionData()
     {
         //int playerID = 0;
+        /*
         print("Player Identification Number: ");
         print("Level " + SceneManager.GetActiveScene().buildIndex + "Number of Deaths: ");
         print("Level " + SceneManager.GetActiveScene().buildIndex + "Gravity Shifts" + GM.instance.gravityShifts);
         print("Level " + SceneManager.GetActiveScene().buildIndex + "Rotations: " + GM.instance.rotations);
         print("Level " + SceneManager.GetActiveScene().buildIndex + "Completion Time: " + GM.instance.rotations);
+        */
+        MetricsLogger.Instance.LogData(("Player Identification Number: "),true);
+        MetricsLogger.Instance.LogData(("Level " + SceneManager.GetActiveScene().buildIndex + ": Number of Deaths: " + GM.instance.deathCount), true);
+        MetricsLogger.Instance.LogData(("Level " + SceneManager.GetActiveScene().buildIndex + ": Gravity Shifts: " + GM.instance.gravityShifts), true);
+        MetricsLogger.Instance.LogData(("Level " + SceneManager.GetActiveScene().buildIndex + ": Rotations: " + GM.instance.rotations), true);
+        MetricsLogger.Instance.LogData(("Level " + SceneManager.GetActiveScene().buildIndex + ": Completion Time: " + GM.instance.rotations), true);
+
 
     }
 

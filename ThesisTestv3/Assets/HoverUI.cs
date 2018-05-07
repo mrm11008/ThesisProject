@@ -5,7 +5,7 @@ using UnityEngine;
 public class HoverUI : MonoBehaviour {
 
 
-    public enum ButtonType {Start, Controls, LevelSelect, Back, MainMenu, Next, Restart,Resume,ControlsInGame,DeathReset, None};
+    public enum ButtonType {Start, Controls, LevelSelect, Back, MainMenu, Next, Restart,Resume,ControlsInGame,DeathReset, None, Quit};
     public ButtonType thisButtonType;
 
     public Material hoverMaterial;
@@ -134,6 +134,7 @@ public class HoverUI : MonoBehaviour {
     {
         if (thisButtonType == ButtonType.Start)
         {
+            //MetricsLogger.Instance.LoadNextScene();
             TitleManager.instance.StartGameHappy();
             Manager.instance.UIClickSound();
         }
@@ -185,6 +186,11 @@ public class HoverUI : MonoBehaviour {
             GM.instance.MainMenu();
             Manager.instance.UIClickSound();
 
+        }
+
+        if (thisButtonType == ButtonType.Quit)
+        {
+            Application.Quit();
         }
     }
 }

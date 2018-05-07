@@ -108,10 +108,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 911, y: 421}
-  m_MaxSize: {x: 22006, y: 10021}
+  m_MinSize: {x: 913, y: 421}
+  m_MaxSize: {x: 22008, y: 10000}
   vertical: 0
-  controlID: 3684
+  controlID: 9738
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -135,7 +135,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 421}
   m_MaxSize: {x: 4002, y: 8021}
   vertical: 1
-  controlID: 3663
+  controlID: 9708
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -188,7 +188,7 @@ MonoBehaviour:
   - {fileID: 15}
   - {fileID: 16}
   m_Selected: 0
-  m_LastSelected: 2
+  m_LastSelected: 1
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -376,9 +376,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -1.9237368, y: 1.3272691, z: -0.1499672}
+    m_Target: {x: -9.686705, y: -1.73933, z: -1.5209236}
     speed: 2
-    m_Value: {x: -1.9237368, y: 1.3272691, z: -0.1499672}
+    m_Value: {x: -9.686705, y: -1.73933, z: -1.5209236}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -402,13 +402,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.020314194, y: -0.09521879, z: -0.002318301, w: 0.9954099}
+    m_Target: {x: 0.68922883, y: -0.064668395, z: 0.061542712, w: 0.71925026}
     speed: 2
-    m_Value: {x: 0.020314194, y: 0.09521879, z: 0.002318301, w: -0.9954099}
+    m_Value: {x: -0.68922883, y: 0.064668395, z: -0.06154271, w: -0.7192502}
   m_Size:
-    m_Target: 10.702607
+    m_Target: 40.084663
     speed: 2
-    m_Value: 10.702607
+    m_Value: 40.084663
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -584,7 +584,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 166bfeff507effffb482ffffd082ffffd282ffff2e83ffffc886ffff0898ffff2ed2ffff9efbffff000000008e840000
+    m_ExpandedIDs: 3e23f9ff5c66f9ff3679f9ffdc9cf9ff48bdf9ffa6d9f9ff0e80fbff9a82fbfffc82fbfff2bbfbffe2c4fbff52e0fbfffce9fbff2cebfbffae09fcff5a2afcffb041fcffa25ffcff5080fcff5097fcff48b1fcff50b1fcfff8befcff28c0fcffaadefcff56fffcffac16fdff9e34fdff4c55fdff4c6cfdff4486fdff4c86fdff56a8feffb814ffff0872ffff4a98ffff92d5ffff9efbfffff4ffffff000000005a5c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -603,7 +603,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 9}
     m_SearchString: 
   m_ExpandedScenes:
-  - Lvl3
+  - Title
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -655,10 +655,10 @@ MonoBehaviour:
   m_LastProjectPath: C:\Users\User\Documents\GitHub\ThesisProject\ThesisTestv3
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 51.596962}
-    m_SelectedIDs: c62a0000
-    m_LastClickedID: 10950
-    m_ExpandedIDs: 0000000086280000a4280000f2280000662900007829000088290000cc2900002c2a0000302a0000942a0000ee2b0000202c00007c2c0000ac2c0000b02c0000c22c00008c2d0000ee2d00007c2e0000cc2e0000103000002e300000a0300000203100005e31000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: c82a0000
+    m_LastClickedID: 10952
+    m_ExpandedIDs: 0000000088280000a6280000f4280000682900007a2900008a2900002e2a0000322a0000962a0000f02b0000222c00007e2c0000ae2c0000b22c0000c42c00008e2d0000f02d0000ce2e00001230000030300000a2300000223100006031000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -686,7 +686,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000086280000a4280000f2280000662900007829000088290000cc2900002c2a0000302a0000942a0000ee2b0000202c00007c2c0000ac2c0000b02c0000c22c00008c2d0000ee2d00007c2e0000cc2e0000103000002e300000a0300000203100005e31000000ca9a3bffffff7f
+    m_ExpandedIDs: 0000000088280000a6280000f4280000682900007a2900008a2900002e2a0000322a0000962a0000f02b0000222c00007e2c0000ae2c0000b22c0000c42c00008e2d0000f02d0000ce2e00001230000030300000a2300000223100006031000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -740,7 +740,7 @@ MonoBehaviour:
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
-  m_DirectoriesAreaWidth: 122
+  m_DirectoriesAreaWidth: 271
 --- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52

@@ -1488,6 +1488,7 @@ MonoBehaviour:
   sideWays: 1
   tilted: 0
   flipped: 0
+  sideWaysSpecial: 0
 --- !u!4 &1628019667
 Transform:
   m_ObjectHideFlags: 0
