@@ -165,6 +165,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.LevelSelect
+523f2bad470af5a131d9be0a364a83fd Assembly-CSharp.dll:.MetricsLogger
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.LaserFlicker
 5b475ae81f104320e519c975a4169e06 Assembly-CSharp.dll:.GM
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
@@ -183,10 +184,9 @@ f671a42aea5f34fec6a4450a3668c615 Assembly-CSharp.dll:UnityEngine.PostProcessing.
 f8912d8787de85c4b670e91d003c5e18 Assembly-CSharp.dll:.ScriptManager
 3e5cf319ea7c5c9637b9996e27eb3793 Assembly-CSharp.dll:.Stick
 4eb2d12f76628efcd5a61b3bca8fa7f7 Assembly-CSharp.dll:.Iris
-b746c30cc2bb16a686a54f1a82bae8d7 Assembly-CSharp.dll:.SpacebarUI
+5f8a981040e9bb42051e6f7df56a4c16 Assembly-CSharp.dll:.SpacebarUI
 d608de375addf55727c4157a07de3764 Assembly-CSharp.dll:.Fall
 7ab58042c2ce288db7acc5d0ce58d512 Assembly-CSharp.dll:.ShiftShine
 690095797f9e9561a12ecf11f6ca5e55 Assembly-CSharp.dll:.CameraOrbit
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.PlatformTrigger
 5c516cdfe8202c78720f5f1482e3e289 Assembly-CSharp.dll:.RotatePlatform
-523f2bad470af5a131d9be0a364a83fd Assembly-CSharp.dll:.MetricsLogger

@@ -8,11 +8,12 @@ public class SpacebarUI : MonoBehaviour {
     public bool spaceBarFall = false;
     private Vector3 ogPos;
 
+    public GameObject spaceBarArrows;
 
 
     // Use this for initialization
     void Start () {
-        ogPos = this.transform.localPosition;	
+        ogPos = spaceBarArrows.transform.localPosition;	
 	}
 	
 	// Update is called once per frame
@@ -26,13 +27,24 @@ public class SpacebarUI : MonoBehaviour {
                 //print("ON HOVER");
                 spaceBarFall = true;
                 spaceBarReset = 0.75f;
+            } else
+            {
+                spaceBarFall = false;
+
             }
+
+        } else
+        {
+            spaceBarFall = false;
 
         }
 
         if (spaceBarFall == true)
         {
-            this.transform.localPosition = new Vector3(this.transform.localPosition.x, this.transform.localPosition.y - Time.unscaledDeltaTime * 2.5f, this.transform.localPosition.z);
+            spaceBarArrows.transform.localPosition = new Vector3(spaceBarArrows.transform.localPosition.x, Mathf.PingPong(Time.unscaledTime / 2, 0.2f), spaceBarArrows.transform.localPosition.z);
+
+            /*
+            spaceBarArrows.transform.localPosition = new Vector3(spaceBarArrows.transform.localPosition.x, spaceBarArrows.transform.localPosition.y - Time.unscaledDeltaTime * 2.5f, spaceBarArrows.transform.localPosition.z);
 
             spaceBarReset -= Time.unscaledDeltaTime;
             if (spaceBarReset <= 0)
@@ -40,8 +52,9 @@ public class SpacebarUI : MonoBehaviour {
                 spaceBarReset = 0.75f;
                 spaceBarFall = false;
 
-                this.transform.localPosition =ogPos;
+                spaceBarArrows.transform.localPosition =ogPos;
             }
+            */
         }
 
     }

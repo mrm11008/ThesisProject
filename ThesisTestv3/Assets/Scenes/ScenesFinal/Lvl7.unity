@@ -371,7 +371,11 @@ Prefab:
     - target: {fileID: 108922746387722154, guid: 48b99d0bb18e0f34aa6d619cf980dfac,
         type: 2}
       propertyPath: m_CullingMask.m_Bits
-      value: 4294671103
+      value: 32768
+      objectReference: {fileID: 0}
+    - target: {fileID: 1524105701385934, guid: 48b99d0bb18e0f34aa6d619cf980dfac, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 48b99d0bb18e0f34aa6d619cf980dfac, type: 2}
@@ -1745,6 +1749,7 @@ MonoBehaviour:
   sideWays: 1
   tilted: 0
   flipped: 0
+  sideWaysSpecial: 0
 --- !u!4 &1104058082
 Transform:
   m_ObjectHideFlags: 0
@@ -2658,6 +2663,7 @@ MonoBehaviour:
   sideWays: 1
   tilted: 0
   flipped: 1
+  sideWaysSpecial: 0
 --- !u!4 &1628019667
 Transform:
   m_ObjectHideFlags: 0

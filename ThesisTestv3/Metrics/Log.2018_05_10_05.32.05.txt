@@ -1,0 +1,6 @@
+2018-05-10 17:32:05Z, Player Identification Number:  
+2018-05-10 17:32:05Z, Level 5: Number of Deaths: 0 
+2018-05-10 17:32:05Z, Level 5: Gravity Shifts: 3 
+2018-05-10 17:32:05Z, Level 5: Rotations: 8 
+2018-05-10 17:32:05Z, Level 5: Completion Time: 8 
+2018-05-10 17:32:05Z, Started game for subject 2018_05_10_05.32.05 
