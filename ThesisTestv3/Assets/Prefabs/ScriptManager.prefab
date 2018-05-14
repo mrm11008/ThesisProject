@@ -257,6 +257,12 @@ MonoBehaviour:
   - clip: {fileID: 8300000, guid: 382589d706c5cd34095be8c11eb872b5, type: 3}
     priority: 12
   happyRotNoFallUtterances: []
+  happyLevelSixUtterance:
+    clip: {fileID: 8300000, guid: f5e991dc41f884942975bbe215d5c928, type: 3}
+    priority: 10
+  happyLevelSevenUtterance:
+    clip: {fileID: 8300000, guid: 02f426600551f2c4aa68ac859886b7d0, type: 3}
+    priority: 10
   angryInstructionUtterance:
     clip: {fileID: 8300000, guid: bd810c2b40ad3fd49b0bb2177ff88ea6, type: 3}
     priority: 11
@@ -381,6 +387,12 @@ MonoBehaviour:
   - clip: {fileID: 8300000, guid: 18991d27fb0397f44a6ebd4c5f30b64b, type: 3}
     priority: 12
   angryRotNoFallUtterances: []
+  angryLevelSixUtterance:
+    clip: {fileID: 8300000, guid: cf2876899b71ee4498e3b8b81d341351, type: 3}
+    priority: 10
+  angryLevelSevenUtterance:
+    clip: {fileID: 8300000, guid: bd32bd02de4463445bf78fa903f1d62f, type: 3}
+    priority: 10
   elapsedTime: 20
   clip:
     clip: {fileID: 0}
@@ -389,3 +401,5 @@ MonoBehaviour:
     clip: {fileID: 0}
     priority: 0
   currentPriority: 0
+  levelSevenTimer: 30
+  levelSevenTrigger: 0

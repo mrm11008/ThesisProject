@@ -387,38 +387,6 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 79576842}
-    - target: {fileID: 108712539963953496, guid: 48b99d0bb18e0f34aa6d619cf980dfac,
-        type: 2}
-      propertyPath: m_Color.r
-      value: 0.9645165
-      objectReference: {fileID: 0}
-    - target: {fileID: 108712539963953496, guid: 48b99d0bb18e0f34aa6d619cf980dfac,
-        type: 2}
-      propertyPath: m_Color.g
-      value: 0.8392157
-      objectReference: {fileID: 0}
-    - target: {fileID: 108712539963953496, guid: 48b99d0bb18e0f34aa6d619cf980dfac,
-        type: 2}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4217958030514182, guid: 48b99d0bb18e0f34aa6d619cf980dfac, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4217958030514182, guid: 48b99d0bb18e0f34aa6d619cf980dfac, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 20956644830170262, guid: 48b99d0bb18e0f34aa6d619cf980dfac,
-        type: 2}
-      propertyPath: orthographic size
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 4217958030514182, guid: 48b99d0bb18e0f34aa6d619cf980dfac, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 48b99d0bb18e0f34aa6d619cf980dfac, type: 2}
   m_IsPrefabParent: 0
@@ -861,7 +829,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4654775510213076, guid: ba794f9141c7628459edc5ae3a1c76f5, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.19
+      value: -3.02
       objectReference: {fileID: 0}
     - target: {fileID: 4654775510213076, guid: ba794f9141c7628459edc5ae3a1c76f5, type: 2}
       propertyPath: m_LocalPosition.z

@@ -43,6 +43,9 @@ public class ScriptManager : MonoBehaviour {
     public ScriptUtterance happyFirstMovingPlatformUtterance;
     public ScriptUtterance happySecondMovingPlatformUtterance;
 
+
+
+
     public ScriptUtterance happyFirstSidewaysPlatformUtterance;
 
     public ScriptUtterance[] happyLevelCompleteUtterances;
@@ -53,7 +56,8 @@ public class ScriptManager : MonoBehaviour {
     public ScriptUtterance[] happyRespawnSpikeUtterances;
     public ScriptUtterance[] happyRespawnBoundryUtterances;
     public ScriptUtterance[] happyRotNoFallUtterances;
-
+    public ScriptUtterance happyLevelSixUtterance;
+    public ScriptUtterance happyLevelSevenUtterance;
 
     //ANGRY
     public ScriptUtterance angryInstructionUtterance;
@@ -79,7 +83,8 @@ public class ScriptManager : MonoBehaviour {
     public ScriptUtterance[] angryRespawnSpikeUtterances;
     public ScriptUtterance[] angryRespawnBoundryUtterances;
     public ScriptUtterance[] angryRotNoFallUtterances;
-
+    public ScriptUtterance angryLevelSixUtterance;
+    public ScriptUtterance angryLevelSevenUtterance;
 
 
     //in a row
@@ -110,6 +115,10 @@ public class ScriptManager : MonoBehaviour {
     private bool deathBySpike = false;
 
     public int currentPriority;
+
+    public float levelSevenTimer = 30f;
+    public bool levelSevenTrigger = false;
+    public bool levelSixTrigger = false;
     void Awake()
     {
         if (instance == null)
@@ -387,6 +396,17 @@ public class ScriptManager : MonoBehaviour {
 
         }
 
+
+
+        if (SceneManager.GetActiveScene().buildIndex == 7 && levelSevenTrigger == false)
+        {
+            levelSevenTimer -= Time.deltaTime;
+            if (levelSevenTimer <= 0)
+            {
+                LevelSevenUtterance();
+                levelSevenTrigger = true;
+            }
+        }
     }
 
     public void PlayIntroUtterance()
@@ -642,6 +662,65 @@ public class ScriptManager : MonoBehaviour {
         }
 
 
+
+    }
+
+    public void LevelSixUtterance()
+    {
+        if (levelSixTrigger == false)
+        {
+            if (angryChar == true)
+            {
+
+                //print("you got a coint without moving!!");
+                introComplete = false;
+                audso.Stop();
+                audso.PlayOneShot(angryLevelSixUtterance.clip);
+                startTime = Time.time;
+                currentClip = angryLevelSixUtterance;
+
+            }
+            else
+            {
+
+                //print("you got a coint without moving!!");
+                introComplete = false;
+                audso.Stop();
+                audso.PlayOneShot(happyLevelSixUtterance.clip);
+                startTime = Time.time;
+                currentClip = happyLevelSixUtterance;
+
+            }
+            levelSixTrigger = true;
+        }
+
+
+    }
+
+    public void LevelSevenUtterance()
+    {
+        if (angryChar == true)
+        {
+
+            //print("you got a coint without moving!!");
+            introComplete = false;
+            audso.Stop();
+            audso.PlayOneShot(angryLevelSevenUtterance.clip);
+            startTime = Time.time;
+            currentClip = angryLevelSevenUtterance;
+
+        }
+        else
+        {
+
+            //print("you got a coint without moving!!");
+            introComplete = false;
+            audso.Stop();
+            audso.PlayOneShot(happyLevelSevenUtterance.clip);
+            startTime = Time.time;
+            currentClip = happyLevelSevenUtterance;
+
+        }
 
     }
 

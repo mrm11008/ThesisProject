@@ -61,6 +61,8 @@ public class GM : MonoBehaviour {
 
     public bool levelComplete = false;
 
+
+
     void Awake() {
 		if (instance == null)
 			instance = this;
@@ -364,9 +366,17 @@ public class GM : MonoBehaviour {
             currentLevelManager.WinExplode();
         } else if (coins < numCoinsNeeded)
         {
+
             if (fall.falling == false)
             {
-                ScriptManager.instance.NotEnoughCoinsUttererance();
+                if (SceneManager.GetActiveScene().buildIndex == 6)
+                {
+                    ScriptManager.instance.LevelSixUtterance();
+                } else
+                {
+                    ScriptManager.instance.NotEnoughCoinsUttererance();
+
+                }
 
             }
             //ScriptManager.instance.CoinCollectUttererance();
